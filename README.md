@@ -4,6 +4,16 @@ A curated list of resources for object counting in computer vision, with a focus
 
 This list draws from recent advancements in class-agnostic counting, where models handle arbitrary object categories without retraining.
 
+## Datasets
+
+| Dataset  | Describe                                                     | Download                                                     |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| FSC147   | FSC-147 is a benchmark dataset for few-shot object counting that requires models to estimate the number of target instances in an image given only a few exemplar bounding boxes, with train and test categories being disjoint to evaluate cross-category generalization. | https://github.com/cvlab-stonybrook/LearningToCountEverything |
+| FSC147-D | It provides a more consistent and fair benchmark for density-regression-based counting models, reducing ambiguity in density map generation that existed in earlier FSC-147 implementations. | https://github.com/niki-amini-naieni/countx                  |
+| REC-8K   | REC-8K images are selected from below datasets and partially collected from the internet for diverse scenes and object attributes. Due to the restriction of the original dataset license, we provide the original download links for the datasets. | https://github.com/sydai/referring-expression-counting       |
+
+
+
 ## Few-Shot Object Counting
 Few-shot object counting uses a small number of exemplars (e.g., 1-5 bounding boxes or images) to count objects of a novel class in a query image.
 
