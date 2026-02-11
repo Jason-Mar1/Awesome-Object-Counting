@@ -11,7 +11,7 @@ This list draws from recent advancements in class-agnostic counting, where model
 | FSC147   | FSC-147 is a benchmark dataset for few-shot object counting that requires models to estimate the number of target instances in an image given only a few exemplar bounding boxes, with train and test categories being disjoint to evaluate cross-category generalization. | https://github.com/cvlab-stonybrook/LearningToCountEverything |
 | FSC147-D | It provides a more consistent and fair benchmark for density-regression-based counting models, reducing ambiguity in density map generation that existed in earlier FSC-147 implementations. | https://github.com/niki-amini-naieni/countx                  |
 | REC-8K   | REC-8K images are selected from below datasets and partially collected from the internet for diverse scenes and object attributes. Due to the restriction of the original dataset license, we provide the original download links for the datasets. | https://github.com/sydai/referring-expression-counting       |
-
+| CARPK    | CARPK is a large-scale car counting dataset designed for object counting in parking lot scenes, where the goal is to estimate the number of cars in aerial images. | https://lafi.github.io/LPN/                                  |
 
 
 ## Few-Shot Object Counting
@@ -49,9 +49,6 @@ Zero-shot counting relies only on class names (text prompts) without exemplars o
 - **Zero-Shot Improvement of Object Counting with CLIP** (NeurIPS 2023): Enhances CLIP's text embedding for better counting.
 - **Expanding Zero-Shot Object Counting with Rich Prompts** (arXiv 2025): Refines text prompts for improved alignment.
 
-### Datasets
-- **FSC-147**: Commonly used for zero-shot evaluation due to its class diversity.
-- **CARPK**: Adapted for zero-shot vehicle counting benchmarks.
 
 ## Multimodal Image-Text Object Counting
 This category involves counting using both image and text modalities, often leveraging VLMs like CLIP for text-guided counting.
