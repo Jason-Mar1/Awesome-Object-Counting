@@ -1,0 +1,2 @@
+# This automation intentionally uses only the Python standard library.
+# Optional: set OPENALEX_API_KEY as a GitHub Actions secret for higher OpenAlex quota.
