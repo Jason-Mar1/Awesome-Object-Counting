@@ -13,6 +13,24 @@ This list draws from recent advancements in class-agnostic counting, where model
 | REC-8K   | REC-8K images are selected from below datasets and partially collected from the internet for diverse scenes and object attributes. Due to the restriction of the original dataset license, we provide the original download links for the datasets. | https://github.com/sydai/referring-expression-counting       |
 | CARPK    | CARPK is a large-scale car counting dataset designed for object counting in parking lot scenes, where the goal is to estimate the number of cars in aerial images. | https://lafi.github.io/LPN/                                  |
 
+## FSC-147 Benchmark and Derivatives
+FSC-147 is the central benchmark for few-shot class-agnostic object counting. It has also motivated derivative datasets and task variants, including text-specified counting, few-shot counting with detection, cleaned/reference-less counting, and robustness-oriented open-vocabulary counting.
+
+### Dataset / Benchmark Papers
+- **Learning To Count Everything** (CVPR 2021): Introduces the FSC-147 dataset and the few-shot object counting setting, where a query image and a few exemplar boxes are used to predict a density map for arbitrary categories. Code/Dataset: https://github.com/cvlab-stonybrook/LearningToCountEverything
+- **Open-world Text-specified Object Counting / CounTX** (arXiv 2023): Extends FSC-147 toward text-specified open-world counting and releases FSC-147-D with richer text descriptions. Project: https://www.robots.ox.ac.uk/~vgg/research/countx
+- **Few-shot Object Counting and Detection / Counting-DETR** (ECCV 2022): Extends counting into joint counting-and-detection with FSCD-147 and FSCD-LVIS, using pseudo boxes and an uncertainty-aware DETR-style detector. Code: https://github.com/VinAIResearch/Counting-DETR
+- **Learning to Count Anything** (arXiv 2022): Studies reference-less class-agnostic counting and proposes FSC-133, a cleaned variant that removes errors, ambiguities, and duplicate images from FSC-147.
+- **A Survey on Class-Agnostic Counting** (arXiv 2025): Summarizes reference-based, reference-less, and open-world text-guided counting methods and reports a leaderboard on FSC-147 and CARPK.
+
+### Representative FSC-147 Methods
+- **FamNet / Learning To Count Everything** (CVPR 2021): Early density-regression baseline for exemplar-guided few-shot counting on FSC-147.
+- **SAFECount: Few-shot Object Counting with Similarity-Aware Feature Enhancement** (arXiv 2022): Improves exemplar-query matching with similarity comparison and feature enhancement. Code: https://github.com/zhiyuanyou/SAFECount
+- **CounTR: Transformer-based Generalised Visual Counting** (BMVC 2022): Uses a transformer architecture for generalized visual counting across zero-shot and few-shot settings.
+- **LOCA: A Low-Shot Object Counting Network With Iterative Prototype Adaptation** (arXiv 2022): Iteratively adapts object prototypes by fusing exemplar shape/appearance with image features; supports both few-shot and no-shot settings.
+- **CACViT: Vision Transformer Off-the-Shelf** (arXiv 2023): Shows that class-agnostic counting can be simplified with a plain pretrained ViT, using scale and magnitude embeddings.
+- **Learning Spatial Similarity Distribution for Few-shot Object Counting / SSD** (arXiv 2024): Learns 4D spatial similarity distributions between exemplar and query features for stronger FSC-147/CARPK performance. Code: https://github.com/CBalance/SSD
+
 
 ## Few-Shot Object Counting
 Few-shot object counting uses a small number of exemplars (e.g., 1-5 bounding boxes or images) to count objects of a novel class in a query image.
@@ -79,6 +97,10 @@ This category involves counting using both image and text modalities, often leve
 ## Code Repositories
 - **OVID** (Jason-Mar1): Open-vocabulary image-text dense framework for counting and localization. https://github.com/Jason-Mar1/OVID
 - **RT-Counter** (Jason-Mar1): Real-time text-guided open-vocabulary object counting. https://github.com/Jason-Mar1/RT-Counter
+- **LearningToCountEverything / FSC-147** (cvlab-stonybrook): Original FSC-147 dataset and FamNet baseline. https://github.com/cvlab-stonybrook/LearningToCountEverything
+- **SAFECount** (zhiyuanyou): Similarity-aware feature enhancement for few-shot object counting. https://github.com/zhiyuanyou/SAFECount
+- **SSD** (CBalance): Spatial Similarity Distribution for few-shot object counting. https://github.com/CBalance/SSD
+- **CounTX** (VGG): Text-specified open-world object counting and FSC-147-D. https://www.robots.ox.ac.uk/~vgg/research/countx
 - **Awesome-Class-Agnostic-Counting** (RaccoonDML): Paper list and comparisons for class-agnostic counting.
 - **Awesome-Few-Shot-Counting** (Tracyummy): Focused on few-shot class-agnostic counting.
 - **Counting-DETR** (VinAIResearch): Implementation for few-shot counting and detection (ECCV 2022).
