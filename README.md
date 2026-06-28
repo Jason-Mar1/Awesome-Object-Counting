@@ -73,3 +73,15 @@ This category involves counting using both image and text modalities, often leve
 - **Counting-DETR** (VinAIResearch): Implementation for few-shot counting and detection (ECCV 2022).
 - **VA-Count** (HopooLinZ): Zero-shot counting with exemplar enhancement (ECCV 2024).
 - **Awesome-Crowd-Counting** (gjy3035): Broader crowd/object counting resources, including code for C^3 Framework.
+
+## Automated Paper Updates
+
+This repository includes an automated paper radar for object-counting research. The workflow searches arXiv and OpenAlex every day, deduplicates papers, writes machine-readable files under `data/`, and refreshes the generated section below.
+
+See [`docs/automation.md`](docs/automation.md) for setup and maintenance notes.
+
+<!-- AUTO_PAPERS:START -->
+## Latest Auto-Discovered Papers
+
+This section will be updated automatically from arXiv and OpenAlex. After merging the automation PR, add `OPENALEX_API_KEY` as a GitHub Actions secret and run **Update object-counting papers** once from the Actions tab.
+<!-- AUTO_PAPERS:END -->
