@@ -50,6 +50,15 @@ Zero-shot counting relies only on class names (text prompts) without exemplars o
 - **Expanding Zero-Shot Object Counting with Rich Prompts** (arXiv 2025): Refines text prompts for improved alignment.
 
 
+## Text-Guided Open-Vocabulary Object Counting
+Text-guided open-vocabulary object counting uses natural-language descriptions to specify target categories and aims to count arbitrary objects without a fixed closed-set label space.
+
+### Papers
+- **OVID: Open-Vocabulary Image-text Dense Framework for Counting and Localization** (ICASSP 2026): A unified image-text dense framework for text-guided object counting and point-level localization, built around multi-modal fusion and direct point prediction. Code: https://github.com/Jason-Mar1/OVID
+- **MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block** (arXiv 2026): Introduces a Mamba-based efficient TOOC framework with Spatial Sparse State Space Duality (S^4D), Spatial Token Selection, and Multi-Granularity Prototypes; reports strong FSC-147 performance with linear complexity. Paper: https://arxiv.org/abs/2606.17650
+- **RT-Counter: Real-Time Text-Guided Open-Vocabulary Object Counting** (arXiv 2026): A real-time TOOC framework using Visual Prototype Textualization and Weaving Transformer layers to improve the accuracy-speed trade-off; reports 112.48 FPS and competitive FSC-147 accuracy. Paper: https://arxiv.org/abs/2606.17561 Code: https://github.com/Jason-Mar1/RT-Counter
+- **Test-Time Training for Robust Text-Guided Open-Vocabulary Object Counting** (arXiv 2026): Introduces Robust-TOOC and Dual-TTT for evaluating and improving TOOC under corruptions such as rain, fog, darkness, Gaussian noise, salt-and-pepper noise, and mixed corruption. Paper: https://arxiv.org/abs/2606.17601
+
 ## Multimodal Image-Text Object Counting
 This category involves counting using both image and text modalities, often leveraging VLMs like CLIP for text-guided counting.
 
@@ -68,6 +77,8 @@ This category involves counting using both image and text modalities, often leve
 - **FSC-147**: Often extended with text prompts for multimodal evaluation.
 
 ## Code Repositories
+- **OVID** (Jason-Mar1): Open-vocabulary image-text dense framework for counting and localization. https://github.com/Jason-Mar1/OVID
+- **RT-Counter** (Jason-Mar1): Real-time text-guided open-vocabulary object counting. https://github.com/Jason-Mar1/RT-Counter
 - **Awesome-Class-Agnostic-Counting** (RaccoonDML): Paper list and comparisons for class-agnostic counting.
 - **Awesome-Few-Shot-Counting** (Tracyummy): Focused on few-shot class-agnostic counting.
 - **Counting-DETR** (VinAIResearch): Implementation for few-shot counting and detection (ECCV 2022).
