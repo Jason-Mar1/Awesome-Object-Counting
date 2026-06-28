@@ -1,0 +1,44 @@
+{
+  "topic": "object counting in computer vision, especially few-shot, zero-shot, text-guided, open-vocabulary, class-agnostic and multimodal object counting",
+  "from_year": 2023,
+  "keep_top_n": 80,
+  "max_results_per_query": 25,
+  "queries": [
+    "few-shot object counting",
+    "zero-shot object counting",
+    "class-agnostic object counting",
+    "open-vocabulary object counting",
+    "text-guided object counting",
+    "multimodal object counting",
+    "generic visual counting",
+    "referring expression counting",
+    "FSC-147 object counting",
+    "CLIP object counting"
+  ],
+  "arxiv_categories": ["cs.CV", "cs.LG", "cs.AI"],
+  "include_keywords": [
+    "object counting",
+    "visual counting",
+    "few-shot counting",
+    "zero-shot counting",
+    "class-agnostic counting",
+    "generic counting",
+    "text-guided counting",
+    "open-vocabulary counting",
+    "multimodal counting",
+    "referring expression counting",
+    "fsc-147",
+    "countgd",
+    "clip-count"
+  ],
+  "soft_exclude_keywords": [
+    "cell counting",
+    "crowd counting",
+    "traffic counting",
+    "vehicle counting",
+    "people counting",
+    "colony counting",
+    "counting lemma",
+    "counting process"
+  ]
+}
