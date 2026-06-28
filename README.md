@@ -30,6 +30,9 @@ FSC-147 is the central benchmark for few-shot class-agnostic object counting. It
 - **LOCA: A Low-Shot Object Counting Network With Iterative Prototype Adaptation** (arXiv 2022): Iteratively adapts object prototypes by fusing exemplar shape/appearance with image features; supports both few-shot and no-shot settings.
 - **CACViT: Vision Transformer Off-the-Shelf** (arXiv 2023): Shows that class-agnostic counting can be simplified with a plain pretrained ViT, using scale and magnitude embeddings.
 - **Learning Spatial Similarity Distribution for Few-shot Object Counting / SSD** (arXiv 2024): Learns 4D spatial similarity distributions between exemplar and query features for stronger FSC-147/CARPK performance. Code: https://github.com/CBalance/SSD
+- **FSC-Mamba: Integrating High-Frequency Global Context and Multi-Dimensional Relational Alignment for Few-Shot Counting**: A Mamba-based few-shot counting method that emphasizes high-frequency global context modeling and multi-dimensional relational alignment for exemplar-query matching. Code: pending.
+- **SeqCount: A Sequence Modeling Framework for Class-Agnostic Counting**: Reformulates class-agnostic counting as a sequence modeling problem for more structured visual repetition modeling. Code: https://github.com/Eamon-0v0/SeqCount
+- **TF-Count: A Training-Free Exemplar-Based Method for Class-Agnostic Cell Counting Using DINOv2**: A training-free exemplar-based counting method for class-agnostic cell counting, using DINOv2 features for biomedical counting scenarios. Code: https://github.com/maoshenghe2-debug/TF-count
 
 
 ## Few-Shot Object Counting
@@ -100,6 +103,8 @@ This category involves counting using both image and text modalities, often leve
 - **LearningToCountEverything / FSC-147** (cvlab-stonybrook): Original FSC-147 dataset and FamNet baseline. https://github.com/cvlab-stonybrook/LearningToCountEverything
 - **SAFECount** (zhiyuanyou): Similarity-aware feature enhancement for few-shot object counting. https://github.com/zhiyuanyou/SAFECount
 - **SSD** (CBalance): Spatial Similarity Distribution for few-shot object counting. https://github.com/CBalance/SSD
+- **SeqCount** (Eamon-0v0): Sequence modeling framework for class-agnostic counting. https://github.com/Eamon-0v0/SeqCount
+- **TF-count** (maoshenghe2-debug): Training-free exemplar-based class-agnostic cell counting with DINOv2. https://github.com/maoshenghe2-debug/TF-count
 - **CounTX** (VGG): Text-specified open-world object counting and FSC-147-D. https://www.robots.ox.ac.uk/~vgg/research/countx
 - **Awesome-Class-Agnostic-Counting** (RaccoonDML): Paper list and comparisons for class-agnostic counting.
 - **Awesome-Few-Shot-Counting** (Tracyummy): Focused on few-shot class-agnostic counting.
