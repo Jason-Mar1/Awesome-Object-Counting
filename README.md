@@ -30,6 +30,8 @@ FSC-147 is the central benchmark for few-shot class-agnostic object counting. It
 - **LOCA: A Low-Shot Object Counting Network With Iterative Prototype Adaptation** (arXiv 2022): Iteratively adapts object prototypes by fusing exemplar shape/appearance with image features; supports both few-shot and no-shot settings.
 - **CACViT: Vision Transformer Off-the-Shelf** (arXiv 2023): Shows that class-agnostic counting can be simplified with a plain pretrained ViT, using scale and magnitude embeddings.
 - **Learning Spatial Similarity Distribution for Few-shot Object Counting / SSD** (arXiv 2024): Learns 4D spatial similarity distributions between exemplar and query features for stronger FSC-147/CARPK performance. Code: https://github.com/CBalance/SSD
+- **CountingDINO: A Training-free Pipeline for Class-Agnostic Counting using Unsupervised Backbones** (arXiv 2025): Uses self-supervised DINO features and exemplar-derived prototypes to perform training-free CAC on FSC-147. Project: https://lorebianchi98.github.io/CountingDINO/
+- **OCCAM: Class-Agnostic, Training-Free, Prior-Free and Multi-Class Object Counting** (arXiv 2026): Uses SAM2 and clustering for prior-free multi-class class-agnostic counting on FSC-147/CARPK. Project: https://mikespanak.github.io/OCCAM_counter
 - **FSC-Mamba: Integrating High-Frequency Global Context and Multi-Dimensional Relational Alignment for Few-Shot Counting**: A Mamba-based few-shot counting method that emphasizes high-frequency global context modeling and multi-dimensional relational alignment for exemplar-query matching. Code: pending.
 - **SeqCount: A Sequence Modeling Framework for Class-Agnostic Counting**: Reformulates class-agnostic counting as a sequence modeling problem for more structured visual repetition modeling. Code: https://github.com/Eamon-0v0/SeqCount
 - **TF-Count: A Training-Free Exemplar-Based Method for Class-Agnostic Cell Counting Using DINOv2**: A training-free exemplar-based counting method for class-agnostic cell counting, using DINOv2 features for biomedical counting scenarios. Code: https://github.com/maoshenghe2-debug/TF-count
@@ -43,6 +45,7 @@ Few-shot object counting uses a small number of exemplars (e.g., 1-5 bounding bo
 - **Class-Agnostic Few-Shot Object Counting** (WACV 2021): Proposes CFOCNet for counting arbitrary classes with few shots.
 - **Few-Shot Object Counting with Frequency Attention and Multi-Perception Head** (2025): Addresses feature degradation and multi-scale fusion in few-shot scenarios.
 - **Few-Shot Object Counting Model Based on Self-Support Matching and Attention Mechanism** (2024): Combines self-support matching for improved few-shot accuracy.
+- **Few-Shot Object Counting with Mamba / FSC-Mamba**: Explores state-space sequence modeling for few-shot counting, targeting high-frequency global context and relational alignment.
 - **Learning Spatial Similarity Distribution for Few-Shot Object Counting** (arXiv 2024): Focuses on spatial similarity for better generalization.
 - **Few-Shot Object Counting With Similarity-Aware Feature Enhancement** (WACV 2023): Enhances features using similarity awareness.
 - **A Lightweight Few-Shot Object Counting Method Based on Similarity Matching** (2025): Emphasizes efficiency in few-shot settings.
@@ -54,6 +57,14 @@ Few-shot object counting uses a small number of exemplars (e.g., 1-5 bounding bo
 - **CARPK** (Car Parking Lot Dataset): Drone-captured images for vehicle counting, useful for few-shot evaluation.
 - **MS COCO** (Microsoft Common Objects in Context): Adapted for few-shot counting tasks, with 330K images and 80 classes.
 - **FSOD** (Few-Shot Object Detection Dataset): Extension of COCO/PASCAL VOC for detection, often used in counting pipelines.
+
+## Training-Free / Foundation-Model Counting
+Training-free counting methods aim to reduce or remove task-specific supervision by reusing foundation-model features, self-supervised representations, or segmentation priors.
+
+### Papers
+- **CountingDINO: A Training-free Pipeline for Class-Agnostic Counting using Unsupervised Backbones** (arXiv 2025): Training-free exemplar-based CAC using self-supervised DINO features and density-map normalization.
+- **OCCAM: Class-Agnostic, Training-Free, Prior-Free and Multi-Class Object Counting** (arXiv 2026): A SAM2-based prior-free counting pipeline for single- and multi-class CAC.
+- **TF-Count: A Training-Free Exemplar-Based Method for Class-Agnostic Cell Counting Using DINOv2**: Extends training-free exemplar-based counting ideas to cell counting with DINOv2-style features; public code repository appears to be a placeholder at present.
 
 ## Zero-Shot Object Counting
 Zero-shot counting relies only on class names (text prompts) without exemplars or training on the target class.
@@ -105,6 +116,8 @@ This category involves counting using both image and text modalities, often leve
 - **SSD** (CBalance): Spatial Similarity Distribution for few-shot object counting. https://github.com/CBalance/SSD
 - **SeqCount** (Eamon-0v0): Sequence modeling framework for class-agnostic counting. https://github.com/Eamon-0v0/SeqCount
 - **TF-count** (maoshenghe2-debug): Training-free exemplar-based class-agnostic cell counting with DINOv2. https://github.com/maoshenghe2-debug/TF-count
+- **CountingDINO**: Training-free class-agnostic counting with DINO features. https://lorebianchi98.github.io/CountingDINO/
+- **OCCAM**: Training-free, prior-free, multi-class object counting. https://mikespanak.github.io/OCCAM_counter
 - **CounTX** (VGG): Text-specified open-world object counting and FSC-147-D. https://www.robots.ox.ac.uk/~vgg/research/countx
 - **Awesome-Class-Agnostic-Counting** (RaccoonDML): Paper list and comparisons for class-agnostic counting.
 - **Awesome-Few-Shot-Counting** (Tracyummy): Focused on few-shot class-agnostic counting.
