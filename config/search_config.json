@@ -1,8 +1,8 @@
 {
-  "topic": "object counting in computer vision, especially few-shot, zero-shot, text-guided, open-vocabulary, class-agnostic and multimodal object counting",
+  "topic": "object counting in computer vision, especially few-shot, zero-shot, text-guided, open-vocabulary, class-agnostic, training-free, foundation-model-based and multimodal object counting",
   "from_year": 2023,
-  "keep_top_n": 80,
-  "max_results_per_query": 25,
+  "keep_top_n": 120,
+  "max_results_per_query": 30,
   "queries": [
     "few-shot object counting",
     "zero-shot object counting",
@@ -13,7 +13,16 @@
     "generic visual counting",
     "referring expression counting",
     "FSC-147 object counting",
-    "CLIP object counting"
+    "CLIP object counting",
+    "FSC-Mamba few-shot counting",
+    "SeqCount class-agnostic counting",
+    "TF-Count DINOv2 cell counting",
+    "training-free exemplar-based class-agnostic counting",
+    "CountingDINO training-free class-agnostic counting",
+    "OCCAM class-agnostic training-free object counting",
+    "DINOv2 class-agnostic counting",
+    "Mamba few-shot object counting",
+    "sequence modeling class-agnostic counting"
   ],
   "arxiv_categories": ["cs.CV", "cs.LG", "cs.AI"],
   "include_keywords": [
@@ -27,17 +36,25 @@
     "open-vocabulary counting",
     "multimodal counting",
     "referring expression counting",
+    "training-free counting",
+    "exemplar-based counting",
+    "cell counting",
     "fsc-147",
     "countgd",
-    "clip-count"
+    "clip-count",
+    "fsc-mamba",
+    "mambacount",
+    "seqcount",
+    "tf-count",
+    "countingdino",
+    "occam",
+    "dinov2"
   ],
   "soft_exclude_keywords": [
-    "cell counting",
     "crowd counting",
     "traffic counting",
     "vehicle counting",
     "people counting",
-    "colony counting",
     "counting lemma",
     "counting process"
   ]
