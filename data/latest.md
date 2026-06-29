@@ -1,45 +1,3 @@
-# Awesome-Object-Counting
-
-A curated list of resources for object counting in computer vision, with few-shot, zero-shot, and multimodal methods.
-
-## 🚀 Radar Dashboard (NEW)
-
-We now include a **visual research radar system**:
-
-👉 `docs/radar/index.html`
-
-Features:
-- Paper ranking (score / citations / recency)
-- Trend analysis (year / category)
-- Method graph (paper-tag network)
-- Benchmark tracking (FSC-147 / CARPK / NWPU)
-
-To run locally:
-```
-python scripts/build_dashboard.py
-open docs/radar/index.html
-```
-
----
-
-## Datasets
-
-| Dataset | Description |
-|--------|-------------|
-| FSC147 | Few-shot counting benchmark |
-| CARPK | Car counting dataset |
-| REC-8K | Referring expression counting |
-
----
-
-## FSC-147 Benchmark and Methods
-(unchanged)
-
-## Automated Paper Updates
-
-This section is refreshed by GitHub Actions from arXiv and OpenAlex.
-
-<!-- AUTO_PAPERS:START -->
 ## Latest Auto-Discovered Papers
 
 Generated at `2026-06-29 19:50:29` UTC. Updated automatically from arXiv and OpenAlex; Google Scholar is not scraped.
@@ -66,4 +24,3 @@ Generated at `2026-06-29 19:50:29` UTC. Updated automatically from arXiv and Ope
 | 2026-04-21 | **Learning to count small and clustered objects with application to bacterial colonies** | General Object Counting | ArXiv.org | Minghua Zheng et al. | [paper](https://arxiv.org/abs/2604.20030)<br>[pdf](https://arxiv.org/pdf/2604.20030) |
 | 2026-04-16 | **CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting** | Few-Shot / Class-Agnostic | article | Md Tanvir Hossain et al. | [paper](https://doi.org/10.1109/qpain69676.2026.11546546)<br>[pdf](https://arxiv.org/pdf/2510.23785)<br>DOI: `10.1109/qpain69676.2026.11546546` |
 | 2026-04-11 | **Counting to Four is still a Chore for VLMs** | Multimodal / Open-Vocabulary | ArXiv.org | Duy Anh et al. | [paper](https://arxiv.org/abs/2604.10039)<br>[pdf](https://arxiv.org/pdf/2604.10039) |
-<!-- AUTO_PAPERS:END -->

@@ -1,0 +1,162 @@
+[
+  {
+    "title": "CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting",
+    "year": 2026,
+    "score": 85,
+    "category": "Few-Shot / Class-Agnostic",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11546546",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://arxiv.org/abs/2606.17650",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.48550/arxiv.2606.17650",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://arxiv.org/abs/2605.18063",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.48550/arxiv.2605.18063",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Zero-shot Object Counting with Fine-Grained Cross-Modal Enhancement and Multi-Scale Semantic Adaptation",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.1177/18758967261447084",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "RealCount: Robust Open-World Object Counting via Duplex Contrastive Learning",
+    "year": 2026,
+    "score": 75,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.1109/icassp55912.2026.11462715",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+    "year": 2026,
+    "score": 70,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.5281/zenodo.20321934",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+    "year": 2026,
+    "score": 70,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://doi.org/10.5281/zenodo.20323323",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Noise-Resilient Quantum Extreme Learning Machines for Astrophysical Spectral Analysis",
+    "year": 2026,
+    "score": 50,
+    "category": "Dataset / Benchmark",
+    "url": "https://hdl.handle.net/10447/709404",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Metaphor and Linguistic Personality in Kazakhstan’s Political Discourse (Case Study of the State of the Nation Address)",
+    "year": 2026,
+    "score": 50,
+    "category": "General Object Counting",
+    "url": "https://doi.org/10.31489/2026phi2(122)/17-28",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure",
+    "year": 2026,
+    "score": 50,
+    "category": "General Object Counting",
+    "url": "https://doi.org/10.5281/zenodo.20877041",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "Counting to Four is still a Chore for VLMs",
+    "year": 2026,
+    "score": 50,
+    "category": "Multimodal / Open-Vocabulary",
+    "url": "https://arxiv.org/abs/2604.10039",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "The Hidden Backbone of Knowledge Transfer: A Taxonomy and Archetypes of Transfer Data in Non-University Research Institutions",
+    "year": 2026,
+    "score": 40,
+    "category": "Dataset / Benchmark",
+    "url": "https://aisel.aisnet.org/pacis2026/it_strategy/it_strategy/1",
+    "why_live": "recent, frontier topic, high intelligence score"
+  },
+  {
+    "title": "A semantic matching method for calculating textual spatial correlation",
+    "year": 2026,
+    "score": 40,
+    "category": "Zero-Shot Object Counting",
+    "url": "https://doi.org/10.1080/17538947.2026.2694150",
+    "why_live": "recent, high intelligence score"
+  },
+  {
+    "title": "Learning to count small and clustered objects with application to bacterial colonies",
+    "year": 2026,
+    "score": 40,
+    "category": "General Object Counting",
+    "url": "https://arxiv.org/abs/2604.20030",
+    "why_live": "recent, high intelligence score"
+  },
+  {
+    "title": "The misled mind",
+    "year": 2026,
+    "score": 20,
+    "category": "General Object Counting",
+    "url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+    "why_live": "recent"
+  },
+  {
+    "title": "Structure-Aware Hierarchical Sha-256 Hashing for Dicom Integrity Verification in Consortium Blockchain Systems",
+    "year": 2026,
+    "score": 20,
+    "category": "General Object Counting",
+    "url": "https://doi.org/10.37965/jait.2026.1376",
+    "why_live": "recent"
+  },
+  {
+    "title": "International approaches to assessing the labor complexity for various specialists with higher medical education (physicians)",
+    "year": 2026,
+    "score": 20,
+    "category": "General Object Counting",
+    "url": "https://doi.org/10.17116/medtech20264802170",
+    "why_live": "recent"
+  },
+  {
+    "title": "Hunting for extreme high-energy-peaked BL Lacs: Rare to find and difficult to classify",
+    "year": 2026,
+    "score": 20,
+    "category": "General Object Counting",
+    "url": "https://arxiv.org/abs/2606.26475",
+    "why_live": "recent"
+  }
+]

@@ -1,20 +1,1458 @@
 {
-  "generated_at": "pending",
+  "generated_at": "2026-06-29 19:50:29",
+  "live_status": {
+    "mode": "scheduled-live",
+    "refresh_cadence": "every 6 hours via GitHub Actions",
+    "paper_count": 20
+  },
   "stats": {
-    "total": 0,
-    "categories": 0
+    "total": 20,
+    "categories": 5,
+    "hot_topics": 5
   },
   "rankings": {
-    "top_score": [],
-    "top_cited": [],
-    "top_recent": []
+    "top_score": [
+      {
+        "title": "CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting",
+        "authors": [
+          "Md Tanvir Hossain",
+          "Akif Islam",
+          "Mohd Ruhul Ameen"
+        ],
+        "year": 2026,
+        "date": "2026-04-16",
+        "venue": "article",
+        "doi": "https://doi.org/10.1109/qpain69676.2026.11546546",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.1109/qpain69676.2026.11546546",
+        "pdf_url": "https://arxiv.org/pdf/2510.23785",
+        "abstract": "Humans can often count unfamiliar objects by observing visual repetition and how parts compose a whole, rather than relying solely on object categories. On the other hand, many counting models that are not given example object patches at test time (i.e., exemplar-free models) struggle in such situations and may overcount when objects contain symmetric components, repeated substructures, or partial occlusion. We introduce CountFormer, a controlled adaptation of a standard densityregression framework inspired by CounTR, in which we replace the image encoder with a self-supervised vision foundation model (DINOv2). The resulting transformer features are augmented with explicit two-dimensional positional embeddings and decoded using a lightweight convolutional network to generate a density map whose integral gives the final object count. Rather than proposing a new counting architecture or objective, our goal is to study whether foundation-based representations influence structural consistency under a strictly exemplar-free inference setting. On FSC-147 (Few-Shot Counting 147), CountFormer achieves competitive performance among existing exemplar-free methods under the official benchmark protocol (MAE 19.06, RMSE 118.45 on the test set). Qualitative analysis indicates fewer part-level overcounting errors in certain structurally complex objects (e.g., glasses), while aggregate MAE and RMSE remain broadly consistent with prior approaches. A diagnostic sensitivity analysis further reveals that evaluation metrics are strongly influenced by a small number of extreme high-density scenes. When four such dense cases are excluded for analysis purposes only, test MAE decreases to 13.14 and RMSE to 33.05, highlighting how a small number of extreme high-density scenes disproportionately contribute to the squared error. Overall, the results highlight the role of representation quality in shaping structural consistency in exemplar-free object counting.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Few-Shot / Class-Agnostic",
+        "score": 85,
+        "id": 18,
+        "frontier_topics": [
+          "training_free_foundation_model",
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+        "authors": [
+          "Hao-Yuan Ma",
+          "Li Zhang",
+          "Minjie Qiang",
+          "Jie Gao"
+        ],
+        "year": 2026,
+        "date": "2026-06-16",
+        "venue": "ArXiv.org",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://arxiv.org/abs/2606.17650",
+        "pdf_url": "https://arxiv.org/pdf/2606.17650",
+        "abstract": "Text-guided Open-vocabulary Object Counting (TOOC) aims to estimate the number of objects described by text prompts, which is particularly challenging in dense scenes with large scale variations. Existing TOOC approaches predominantly rely on Transformers, whose quadratic complexity with respect to image resolution limits their scalability. Mamba offers a promising alternative due to its linear complexity. However, previous Mamba-based methods have two main limitations. On the one hand, the inherent causal formulation of Mamba constrains the bidirectional spatial dependency modeling required by non-causal vision tasks. On the other hand, existing Mamba-based vision models often overlook the unconstrained high entropy in the spatial token responses, which can weaken local details and high-frequency cues. To address these limitations, we propose MambaCount, an efficient framework built on the Spatial Sparse State Space Duality (S^4D) block. Specifically, we analyze and reconstruct the decay dynamics of hidden states in Mamba to alleviate the dependency constraints introduced by causal modeling. Moreover, we introduce a Spatial Token Selection (STS) sub-block to reduce the unconstrained high entropy in spatial token responses within Mamba. In addition, we design Multi-Granularity Prototypes (MGP) to identify object-like regions at different semantic levels, improving cross-modal alignment and interpretability. Extensive experiments on FSC-147 demonstrate that MambaCount achieves state-of-the-art performance among methods without secondary querying, obtaining a test MAE of 12.23, while retaining linear complexity.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 11,
+        "frontier_topics": [
+          "text_guided_open_vocabulary",
+          "mamba_state_space",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+        "authors": [
+          "Hao-Yuan Ma",
+          "Li Zhang",
+          "Minjie Qiang",
+          "Gao"
+        ],
+        "year": 2026,
+        "date": "2026-06-16",
+        "venue": "arXiv (Cornell University)",
+        "doi": "https://doi.org/10.48550/arxiv.2606.17650",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.48550/arxiv.2606.17650",
+        "pdf_url": "https://doi.org/10.48550/arxiv.2606.17650",
+        "abstract": "Text-guided Open-vocabulary Object Counting (TOOC) aims to estimate the number of objects described by text prompts, which is particularly challenging in dense scenes with large scale variations. Existing TOOC approaches predominantly rely on Transformers, whose quadratic complexity with respect to image resolution limits their scalability. Mamba offers a promising alternative due to its linear complexity. However, previous Mamba-based methods have two main limitations. On the one hand, the inherent causal formulation of Mamba constrains the bidirectional spatial dependency modeling required by non-causal vision tasks. On the other hand, existing Mamba-based vision models often overlook the unconstrained high entropy in the spatial token responses, which can weaken local details and high-frequency cues. To address these limitations, we propose MambaCount, an efficient framework built on the Spatial Sparse State Space Duality (S^4D) block. Specifically, we analyze and reconstruct the decay dynamics of hidden states in Mamba to alleviate the dependency constraints introduced by causal modeling. Moreover, we introduce a Spatial Token Selection (STS) sub-block to reduce the unconstrained high entropy in spatial token responses within Mamba. In addition, we design Multi-Granularity Prototypes (MGP) to identify object-like regions at different semantic levels, improving cross-modal alignment and interpretability. Extensive experiments on FSC-147 demonstrate that MambaCount achieves state-of-the-art performance among methods without secondary querying, obtaining a test MAE of 12.23, while retaining linear complexity.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 12,
+        "frontier_topics": [
+          "text_guided_open_vocabulary",
+          "mamba_state_space",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+        "authors": [
+          "Corentin Dumery",
+          "Niki Amini-Naieni",
+          "Shervin Naini",
+          "Pascal Fua"
+        ],
+        "year": 2026,
+        "date": "2026-05-18",
+        "venue": "ArXiv.org",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://arxiv.org/abs/2605.18063",
+        "pdf_url": "https://arxiv.org/pdf/2605.18063",
+        "abstract": "Object counting is a foundational vision task with over a decade of dedicated research, yet state-of-the-art models still fail systematically in the mixed-object setting that dominates real-world applications such as industrial inspection and product sorting. We show that this gap is strongly driven by limitations in existing training and evaluation data: real counting datasets are prohibitively expensive to annotate and suffer from labeling noise, while existing synthetic alternatives lack diversity and realism. We address this with MixCount, a dataset and benchmark for mixed-object counting designed to target the failure modes of current counting models. To overcome the high cost of constructing and labeling such data, we develop an automatic generation pipeline that synthesizes images, fine-grained textual descriptions, and pixel-perfect counting annotations at scale, eliminating the labeling ambiguity that plagues prior datasets. Evaluating state-of-the-art counting models on MixCount exposes severe degradation in the mixed-object setting. More importantly, training these models on our synthesized data yields substantial gains on real-world benchmarks, reducing MAE by 20.14% on FSC-147 and by 18.3% on PairTally. These results establish MixCount as both a benchmark and a training dataset for fine-grained counting, and demonstrate that our pipeline, which produces effectively unlimited labeled data, helps address a long-standing bottleneck in counting models.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 13,
+        "frontier_topics": [
+          "text_guided_open_vocabulary",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+        "authors": [
+          "Corentin Dumery",
+          "Niki Amini-Naieni",
+          "Shervin Naini",
+          "Pascal Fua"
+        ],
+        "year": 2026,
+        "date": "2026-05-18",
+        "venue": "arXiv (Cornell University)",
+        "doi": "https://doi.org/10.48550/arxiv.2605.18063",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.48550/arxiv.2605.18063",
+        "pdf_url": "https://doi.org/10.48550/arxiv.2605.18063",
+        "abstract": "Object counting is a foundational vision task with over a decade of dedicated research, yet state-of-the-art models still fail systematically in the mixed-object setting that dominates real-world applications such as industrial inspection and product sorting. We show that this gap is strongly driven by limitations in existing training and evaluation data: real counting datasets are prohibitively expensive to annotate and suffer from labeling noise, while existing synthetic alternatives lack diversity and realism. We address this with MixCount, a dataset and benchmark for mixed-object counting designed to target the failure modes of current counting models. To overcome the high cost of constructing and labeling such data, we develop an automatic generation pipeline that synthesizes images, fine-grained textual descriptions, and pixel-perfect counting annotations at scale, eliminating the labeling ambiguity that plagues prior datasets. Evaluating state-of-the-art counting models on MixCount exposes severe degradation in the mixed-object setting. More importantly, training these models on our synthesized data yields substantial gains on real-world benchmarks, reducing MAE by 20.14% on FSC-147 and by 18.3% on PairTally. These results establish MixCount as both a benchmark and a training dataset for fine-grained counting, and demonstrate that our pipeline, which produces effectively unlimited labeled data, helps address a long-standing bottleneck in counting models.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 14,
+        "frontier_topics": [
+          "text_guided_open_vocabulary",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Zero-shot Object Counting with Fine-Grained Cross-Modal Enhancement and Multi-Scale Semantic Adaptation",
+        "authors": [
+          "Haimin Xu",
+          "Kaiqiong Sun",
+          "Le Tang",
+          "Ge Li",
+          "Yixin Xu"
+        ],
+        "year": 2026,
+        "date": "2026-05-08",
+        "venue": "Journal of Intelligent & Fuzzy Systems",
+        "doi": "https://doi.org/10.1177/18758967261447084",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.1177/18758967261447084",
+        "pdf_url": "",
+        "abstract": "Zero-shot object counting estimates object quantities from textual inputs without category-specific training. While detection-based methods like the pre-trained Grounding DINO offer a promising baseline, their performance is hindered by two critical limitations: insufficient fine-grained alignment between visual and textual features, leading to confusion among semantically similar objects, and poor adaptability to multi-scale object distributions in complex scenes. To address these issues, we propose an enhanced framework built upon Grounding DINO for zero-shot object counting that integrates: (1) a fine-grained cross-modal enhancement module, which refines visual-text alignment via deep feature interaction and cross-attention mechanisms, explicitly modeling object-attribute relationships; and (2) a multi-scale semantic adaptation module, which dynamically fuses multi-level visual features with textual semantics to achieve scale-invariant counting. Extensive experiments on FSC-147, CARPK, and CountBench demonstrate superiority of the proposed method. On FSC-147, our method achieves 11.74 MAE and 58.36 RMSE on the validation set, and 10.73 MAE and 103.63 RMSE on the test set, achieving 3.3% and 17.3% lower MAE than baseline method CountGD on validation and test sets, respectively. For cross-dataset generalization, it attains lower MAE/RMSE on CARPK and lower RMSE on CountBench than baseline, demonstrating robust zero-shot capability.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 15,
+        "frontier_topics": [
+          "text_guided_open_vocabulary",
+          "training_free_foundation_model",
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "RealCount: Robust Open-World Object Counting via Duplex Contrastive Learning",
+        "authors": [
+          "Ziqiang Shi",
+          "Rujie Liu",
+          "Jun Takahashi",
+          "Shan Jiang"
+        ],
+        "year": 2026,
+        "date": "2026-04-21",
+        "venue": "article",
+        "doi": "https://doi.org/10.1109/icassp55912.2026.11462715",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.1109/icassp55912.2026.11462715",
+        "pdf_url": "",
+        "abstract": "Current visual exemplar-based counting methods assume that exemplars are taken from the target image, implying that target objects are already present. This works well in controlled environments but fails in real-world use cases—such as retail inventory counting using product posters—where exemplars come from external sources and lack explicit verification. To tackle this, we propose robust open-world object counting (robust OWOC), a new task requiring models to handle external exemplars while preserving accuracy. We also introduce robust FSC-147 (RFSC-147), an upgraded benchmark with 2.01 million annotated image pairs reflecting real-world diversity. Evaluations show that previous state-of-the-art (SOTA) methods suffer a significant performance drop, with mean absolute error (MAE) increasing by an average of 300% on RFSC-147. We propose RealCount, a multimodal vision-language framework incorporating dual-stream prompt/image adapters and duplex query/input contrastive learning. Real-Count achieves SOTA results on RFSC-147, reducing MAE by at least 60% and RMSE by over 18% compared to the previous best method. It also outperforms prior models on standard FSC-147, reducing RMSE by 20%.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "FSC-147 object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 75,
+        "id": 16,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20321934",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20321934",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20321934",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 0,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20323323",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20323323",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20323323",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 1,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Noise-Resilient Quantum Extreme Learning Machines for Astrophysical Spectral Analysis",
+        "authors": [
+          "Marco Vetrano"
+        ],
+        "year": 2026,
+        "date": "2026-07-07",
+        "venue": "Nova Science Publishers (Nova Science Publishers, Inc.)",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://hdl.handle.net/10447/709404",
+        "pdf_url": "https://iris.unipa.it/bitstream/10447/709404/2/PhD_Thesis.pdf",
+        "abstract": "In this thesis we investigate the information processing capabilities of Quantum Extreme Learning Machines and discuss their real world applications in the field of astrophysics, particularly for atmospheric retrieval of exoplanets and supernovae spectral analysis, designing noise resilient models for Noise Intermediate Scale Quantum (NISQ) implementations. Extreme Learning Machines (ELMs) offer rapid training and structural efficiency by utilizing a randomized hidden layer—the reservoir—to map input data into a high-dimensional feature space, effectively linearizing complex learning problems. While traditionally implemented via randomized classical neural networks, the mathematical properties of these reservoirs naturally extend to complex physical systems. This universality has driven the development of Quantum Extreme Learning Machines (QELMs), which utilize quantum systems as the computational reservoir. In the field of physical extreme learning machines, information is processed through the internal dynamics of the system and recollected by measuring the system. In the context of QELMs, this consists in selecting a set of observables or a POVM to be measured on the reservoir, whose outcomes is then used to train the post-processing layer.In this work, we will first review the foundations of Neural Networs, ELMs and Reservoir Computers, highlighting specifically on similarities and fundamental differences between these models and develop the theory behind the quantum counterparts. Then, we demonstrate that QELMs can efficiently process and estimate quantum states well beyond the reservoir's scrambling time, beyond which the information should be irretrievable through local measurements. Furthermore, we show that within this regime, specific classes of Hamiltonians achieve reconstruction accuracies matching those of global random unitary dynamics. Following these theoretical aspects, we design noise-resilient QELM architectures tailored for the spectral analysis of complex astrophysical phenomena. We apply these models to exoplanetary atmospheric retrieval and supernova remnant datasets, particularly deploying the algorithm for the exoplanetary context on real quantum hardware (IBM Fez). By evaluating various pre-processing and encoding strategies—including Dense Angle Encoding, IQP embedding, and Data Re-uploading—we demonstrate that these noise-resilient QELMs are highly adaptable to different classes of astrophysical objects and capable of extracting critical spectral parameters also on NISQ devices, paving the way for real world applications of Quantum Computing in the astrophysical field.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "few-shot object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Dataset / Benchmark",
+        "score": 50,
+        "id": 2,
+        "frontier_topics": [
+          "benchmark_dataset"
+        ]
+      }
+    ],
+    "top_recent": [
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20321934",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20321934",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20321934",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 0,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20323323",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20323323",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20323323",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 1,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Noise-Resilient Quantum Extreme Learning Machines for Astrophysical Spectral Analysis",
+        "authors": [
+          "Marco Vetrano"
+        ],
+        "year": 2026,
+        "date": "2026-07-07",
+        "venue": "Nova Science Publishers (Nova Science Publishers, Inc.)",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://hdl.handle.net/10447/709404",
+        "pdf_url": "https://iris.unipa.it/bitstream/10447/709404/2/PhD_Thesis.pdf",
+        "abstract": "In this thesis we investigate the information processing capabilities of Quantum Extreme Learning Machines and discuss their real world applications in the field of astrophysics, particularly for atmospheric retrieval of exoplanets and supernovae spectral analysis, designing noise resilient models for Noise Intermediate Scale Quantum (NISQ) implementations. Extreme Learning Machines (ELMs) offer rapid training and structural efficiency by utilizing a randomized hidden layer—the reservoir—to map input data into a high-dimensional feature space, effectively linearizing complex learning problems. While traditionally implemented via randomized classical neural networks, the mathematical properties of these reservoirs naturally extend to complex physical systems. This universality has driven the development of Quantum Extreme Learning Machines (QELMs), which utilize quantum systems as the computational reservoir. In the field of physical extreme learning machines, information is processed through the internal dynamics of the system and recollected by measuring the system. In the context of QELMs, this consists in selecting a set of observables or a POVM to be measured on the reservoir, whose outcomes is then used to train the post-processing layer.In this work, we will first review the foundations of Neural Networs, ELMs and Reservoir Computers, highlighting specifically on similarities and fundamental differences between these models and develop the theory behind the quantum counterparts. Then, we demonstrate that QELMs can efficiently process and estimate quantum states well beyond the reservoir's scrambling time, beyond which the information should be irretrievable through local measurements. Furthermore, we show that within this regime, specific classes of Hamiltonians achieve reconstruction accuracies matching those of global random unitary dynamics. Following these theoretical aspects, we design noise-resilient QELM architectures tailored for the spectral analysis of complex astrophysical phenomena. We apply these models to exoplanetary atmospheric retrieval and supernova remnant datasets, particularly deploying the algorithm for the exoplanetary context on real quantum hardware (IBM Fez). By evaluating various pre-processing and encoding strategies—including Dense Angle Encoding, IQP embedding, and Data Re-uploading—we demonstrate that these noise-resilient QELMs are highly adaptable to different classes of astrophysical objects and capable of extracting critical spectral parameters also on NISQ devices, paving the way for real world applications of Quantum Computing in the astrophysical field.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "few-shot object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Dataset / Benchmark",
+        "score": 50,
+        "id": 2,
+        "frontier_topics": [
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The Hidden Backbone of Knowledge Transfer: A Taxonomy and Archetypes of Transfer Data in Non-University Research Institutions",
+        "authors": [
+          "Anna Gieß",
+          "Josip Lovrekovic",
+          "Masoumeh Tavakoligargari",
+          "Manuel Etzkorn",
+          "Jan Jürjens",
+          "Harald F. O. von Korflesch",
+          "Peter Fettke"
+        ],
+        "year": 2026,
+        "date": "2026-07-05",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://aisel.aisnet.org/pacis2026/it_strategy/it_strategy/1",
+        "pdf_url": "https://aisel.aisnet.org/context/pacis2026/article/1152/viewcontent/1162_doc.pdf",
+        "abstract": "Knowledge transfer (KT) in non-university research institutions (NURIs) is often studied through mechanisms and relationships, while the concrete data objects crossing organizational boundaries remain underspecified. These transfer data (e.g., reports, publications, datasets) shape accountability, access control, reuse, and compliant handling. Yet conceptual clarity and a classification scheme for comparing them across transfer contexts are lacking. We propose a taxonomy of transfer data based on a systematic literature review, 12 expert interviews in German NURIs, and the classification of 234 empirically identified data objects. Building on this taxonomy, we derive three archetypes through exploratory hierarchical clustering: compliance and accountability information, operational coordination data, and scientific knowledge core. Our work advances KT research by shifting the unit of analysis from transfer mechanisms to transfer data and helps practitioners align governance rules with distinct data archetypes.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Dataset / Benchmark",
+        "score": 40,
+        "id": 3,
+        "frontier_topics": [
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The misled mind",
+        "authors": [
+          "Richard Paul Farry"
+        ],
+        "year": 2026,
+        "date": "2026-07-01",
+        "venue": "University of Birmingham Institutional Research Archive (University of Birmingham)",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+        "pdf_url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+        "abstract": "Abstract 1 Cases of the confabulation of propositional attitudes have been used by Carruthers (2013) as evidence that we lack introspective access to our propositional attitudes, and that instead our route to self-knowledge is via self-interpretation. In this paper I defend this position from objections raised by Andreotta (2021) that Carruthers’ claimed cases of self-misattributions do not show people misattributing their propositional attitudes. In response to Andreotta’s objection for a particular case involving a split-brain patient, that the apparent misattribution involved a fabricated explanation, not a fabricated intention, I argue that this objection does not hold for cases where self-attributions are made retrospectively. Secondly, I explore the unwelcome consequences of accepting a separate objection from Andreotta that some claimed cases of misattributions are instances of propositional attitudes being influenced by perceptual cues. Accepting this objection would entail that we are mercurial beings, which plainly we are not, or that additional attitude-like mental features would be required to avoid this entailment. In defending self-interpretation accounts of self-knowledge, I seek to show that compared to direct access views they can more plausibly account for why our self-reports are swayed by perceptual cues. I go on to make the case that confabulations are a normal and everyday occurrence, and as such, our confabulations mainly go unnoticed, get glossed over, or become self-fulfilling. Consequently, the level of behavioural incongruence with self-attributions required by critics to show that confabulations have occurred is too demanding. Abstract 2 We experience things like redness and painfulness—the qualitative aspects of experience—which seem difficult to account for in terms of the brain and information processing. This difficulty arises, because the qualitative aspects of experience seem to have features which (when taken at face value) seemingly do not fit comfortably with a physicalist and mechanistic view of the brain. There are several different approaches to resolving this difficulty, including Keith Frankish’s (2017; 2023) Illusionism. According to Illusionism we only seem to experience things like redness and painfulness. They do not really exist, rather they are the result of a misrepresentation or illusory perspective, somewhat analogous to the apparent existence of rainbows as arcs in the sky. In this paper I present a novel argument in support of Illusionism, that as evolved entities we should expect our various mental capacities to track usefulness rather than accuracy. As such the way things seem to us seem the way that they do because they have developed to be useful, rather than truth-tracking, and so we should not expect our qualitive experiences to provide us with a view of how things really are. The various perceptual illusions and cognitive biases that we experience show that in a range of cases such expectations are correct. As a result, we should be wary of using our qualitative experiences as a basis for determining what things really are, and in particular the metaphysical status of those experiences. Abstract 3 In this paper I argue in favour of radical cognitive extension, sometimes referred to as cognitive bloat. According to the Extended Mind Thesis (Clark and Chalmers 1998), under the right conditions cognition and the mind can extend over external artefacts like notebooks. Various critics—along with Clark and Chalmers 1998—seek to limit the scope of the thesis, often appealing to a reductio ad absurdum. However, rather than the implications of the Extended Mind Thesis being absurd, I claim they are counter-intuitive but revealing insights into the nature of cognition, and processes in general. In this paper I argue against Clark and Chalmers’ (1998) ‘Availability and Portability’ Criteria and consider a parallel case of Extended Digestion and the extent to which we consider entities apt for a particular functional role is based on human-centric concerns, to make the case for a wide view of cognitive extension, in favour of cognitive bloat.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 4,
+        "frontier_topics": []
+      },
+      {
+        "title": "Metaphor and Linguistic Personality in Kazakhstan’s Political Discourse (Case Study of the State of the Nation Address)",
+        "authors": [
+          "О. G. Alexeyeva",
+          "Zh.N. Zhunussova",
+          "B.K. Ayazbayeva",
+          "N.K. Khan",
+          "V. A. Yеrmakova"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "Bulletin of the Karaganda University Philology series",
+        "doi": "https://doi.org/10.31489/2026phi2(122)/17-28",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.31489/2026phi2(122)/17-28",
+        "pdf_url": "https://philology-vestnik.buketov.edu.kz/philology-vestnik/article/download/1338/542",
+        "abstract": "This article analyzes the construction of political reality and the communicative behavior of the linguistic personality in contemporary Kazakhstani political discourse. The object of the study is the official text of the Address delivered by Head of State Kassym-Jomart Tokayev on September 1, 2024. The research is significant due to the study justified by the necessity for a comprehensive linguistic examination of the pivotal political text that influences the national agenda during the period of substantial social and economic transformations. The scientific novelty stems from the integrated comprehensive, integrated approach combining Cognitive Linguistics (examining conceptual metaphors through A.P. Chudinov’s typology and G. Lakoff’s theory), Discourse Analysis (evaluating communicative strategies per O.S. Issers), and Content Analysis — a combination not previously applied to this material. The findings reveal that the primary rhetorical device in the Address is a dual system of conceptual metaphors. The creative artifact metaphor (the state is a mechanism / construction) dominates, accounting for approximately 60 % of all metaphors. This creates an image of a rational, manageable, and technological process of state governance. This model is systematically juxtaposed with Threat metaphors-sociomorphic (War) and Anthropomorphic (Morbus) to contextualize issues and legitimize the authorities’ decisive actions. The distinctive traits of the linguistic personality of the Address’s author are examined, leading to the conclusion that the author exemplifies the rational-technocratic type of linguistic personality. The image of a leader, whose legitimacy is predicated on competence and efficacy rather than emotional appeal, is formulated through the synergy of specialized vocabulary, prevailingmetaphorical frameworks, and strategic communication techniques (including self-presentation, argumentation, discreditation, and unification). Ultimately, the article elucidates linguistic phenomena and illustrates how the worldview and pragmatic objectives of a national leader are encoded in political discourse through a sophisticated array of discursive mechanisms.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 50,
+        "id": 5,
+        "frontier_topics": [
+          "training_free_foundation_model"
+        ]
+      },
+      {
+        "title": "Structure-Aware Hierarchical Sha-256 Hashing for Dicom Integrity Verification in Consortium Blockchain Systems",
+        "authors": [
+          "Dendy Jonas",
+          "Danny Manongga",
+          "Irwan Sembiring",
+          "Indrastanti Ratna Widiasari"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "Journal of Artificial Intelligence and Technology",
+        "doi": "https://doi.org/10.37965/jait.2026.1376",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.37965/jait.2026.1376",
+        "pdf_url": "https://ojs.istp-press.com/jait/article/download/1376/827",
+        "abstract": "Integrity verification of DICOM-based medical data is a critical requirement in distributed healthcare systems, where conventional hashing methods operate at the file level and do not account for the internal structure of medical images. Existing approaches treat DICOM files as undifferentiated byte streams, limiting sensitivity to localized modifications in metadata and pixel-level content. This study addresses this limitation by evaluating a structure-aware hierarchical hashing scheme that incorporates intrinsic DICOM attributes into the hashing process. The objective is to assess whether integrating metadata features, pixel-based descriptors, and entropy measures within a hierarchical SHA-256 framework influences the statistical characteristics of hash outputs. An experimental comparative design is implemented using 427 DICOM files. The proposed method applies a multi-component HMAC-SHA256-based hashing pipeline and is evaluated against standard SHA-256, SHA-3, and locality-sensitive hashing (LSH). Evaluation metrics include entropy (bounded between 0 and 8), bit distribution, chi-square statistics, Kolmogorov–Smirnov test results, avalanche effect, and execution time. The results indicate that all methods maintain statistically valid output distributions, while the proposed approach exhibits greater variability in entropy values within the valid range, consistent bit balance, lower deviation in distributional tests relative to LSH, and stable avalanche behavior across structured input variations. Execution time increases moderately due to multi-stage processing. These findings show that hierarchical decomposition produces enhanced sensitivity to input structure without altering deterministic hashing properties. The study contributes a domain-aware hierarchical hashing framework that integrates DICOM structural components into hash generation. This contribution demonstrates that structure-aware hashing enables more sensitive detection of input-level variations while preserving statistical correctness, providing a methodologically grounded approach for integrity verification in medical data systems without extending claims to cryptographic superiority.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "generic visual counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 6,
+        "frontier_topics": []
+      },
+      {
+        "title": "A semantic matching method for calculating textual spatial correlation",
+        "authors": [
+          "Peiyuan Qiu",
+          "Shu Wang",
+          "Huaqiao Xing",
+          "Y C Zhu",
+          "Fengxiang Jin"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "International Journal of Digital Earth",
+        "doi": "https://doi.org/10.1080/17538947.2026.2694150",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.1080/17538947.2026.2694150",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/17538947.2026.2694150?needAccess=true",
+        "abstract": "Textual spatial correlation quantifies the degree of association between knowledge described in text and specific geographic spaces. For example, the statement ‘the nutria is an invasive species’ is valid only in certain regions. In geographic information science, measuring textual spatial correlation is not only a fundamental prerequisite for spatiotemporal computing, but also a cornerstone for high-precision geo-artificial intelligence applications. To address the limitations of annotation dependency and low computational efficiency in the existing methods, this study proposed a Spatial Correlation Index and corresponding calculation method. This method fully leverages implicit spatial knowledge from a large-scale knowledge base and through a semantic-matching mechanism, enabling the efficient calculation of textual spatial correlation. The effectiveness of the method was evaluated based on the spatial correlation calculations of textual data and entities in a knowledge graph. Results demonstrate that the proposed method achieves performance comparable to few-shot prompted GPT-4.1 and DeepSeek-V3, while outperforming their zero-shot counterparts, with average F1-score improvements of 18.65% and 27.27%, respectively. Meanwhile, the proposed method reduces the average calculation time by 77.37% and 77.74%, respectively. This study achieved a breakthrough in efficiently measuring textual spatial correlations, thereby providing an essential technical foundation for spatial-related intelligent computing.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "few-shot object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Zero-Shot Object Counting",
+        "score": 40,
+        "id": 7,
+        "frontier_topics": []
+      },
+      {
+        "title": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure",
+        "authors": [
+          "Dean Kulik"
+        ],
+        "year": 2026,
+        "date": "2026-06-26",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20877041",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20877041",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20877041",
+        "abstract": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure Driven by Dean Kulik June 2026 We develop and test a small, declarative query language for interrogating the structure of deterministic functions, built from five primitives—Direction, Boundary, Wedge (reach), Residue, and Resolution—and a SELECT/FROM/READING template. Rather than computing a function’s output, the language poses structural questions to it: what a boundary forces, how far that forcing reaches, and what residue remains once carried echo is removed. To validate the language, we calibrate every primitive against SHA-256, whose round function is a known bijection given the message schedule and therefore supplies clean ground truth. All four implemented primitives return ground truth (e.g. bits of internal state forced from the digest alone, verified words). We then apply the calibrated language to produce a three-dimensional action-axis decomposition of the SHA-256 state grid: lifting each cell by the operation that wrote it rather than its value. The decomposition separates a flat, redundant conveyor echo ( of cells, exactly the six shift-coupled registers) from a action axis confined to the two injection registers and , within which a carry buckle carries the function’s nonlinearity and is provably carry-free at the least-significant bit. Three independently computed structural features—the conservation-law seam, the residual “escape” bits, and the carry relief—all localize to the same two register rails. We state the operative boundary explicitly and repeatedly: every result here is a property of the forward trajectory or its structural residue; none inverts SHA-256 from the digest alone, and preimage and collision resistance are untouched. We close with the geometric base case (the degenerate “-ray” triangle), an account of the readable-versus-sealed boundary that the work charts, a clearly bracketed interpretive section, and a falsifiability ledger that preserves negative results. Introduction Most interrogation of data is extensional: we store records and retrieve them. But many objects of interest are not stored—they are intensional, defined by rules that generate an enormous or infinite state space. A cryptographic hash, a transcendental constant, a neural network, and a system of access-control policies are all of this kind: the interesting facts are structural—which variables are forced, which constraints conflict, how far an influence reaches—and asking them by enumeration is hopeless. This paper takes a deliberately narrow and testable stance toward such structure. We propose that a useful way to study a deterministic function is not to compute it, but to query it with a small fixed vocabulary of structural operations, and that the right way to gain confidence in such a vocabulary is to calibrate it against a domain where the ground truth is fully known. We use SHA-256 as that calibration domain for one reason: its compression round is a bijection given the message schedule, so it is a deterministic object with no rounding, no approximation, and no ambiguity. If a structural query returns the right answer there—where we can check it against the actual computation—we have evidence that the query is sound, and a basis for using it where ground truth is not in hand. The governing methodology is simple and we hold to it throughout: a claim counts only if executable code produces it, and we distinguish sharply between three statuses. Verified results are reproduced by code and checked against ground truth. Open questions are posed precisely but not settled. Interpretive readings are organizing metaphors that the present evidence does not establish; we confine these to a clearly labeled section and we do not let them masquerade as results. Negative results are preserved as navigational data rather than discarded. Contributions. (1) A five-primitive constraint-query language with a declarative template, related to existing notions in formal methods (program slicing, cone-of-influence reduction, backbone extraction, unsatisfiable cores). (2) A calibration of all four implemented primitives against SHA-256 ground truth. (3) A three-dimensional action-axis decomposition of the SHA-256 state grid that localizes the function’s irreducible nonlinear content to a carry relief on two register rails, and demonstrates that three independent structural features coincide on those same rails. (4) An explicit account of the boundary the work respects—no inversion from the digest, preimage resistance intact—and a falsifiability ledger. Preliminaries: SHA-256 as a Structured Lattice We briefly fix notation. SHA-256 processes -bit message blocks. Each block is expanded into a schedule of sixty-four -bit words by the recurrence with the message words and fixed rotate-shift mixers. The compression function maintains eight -bit registers , initialized to the constants , and iterates sixty-four rounds: The round is an Add–Rotate–Xor (ARX) construction. Its nonlinearity comes not from randomness but from the interaction of three individually linear operations under different algebras: integer addition (carry), bitwise XOR, and rotation. Two structural facts follow immediately from the update rule and recur throughout the paper. Observation 1 (The register conveyor). Only and receive a freshly computed value each round; the remaining six registers are exact, delayed copies: We verified these six identities hold with zero mismatches across all rounds for the empty message and for arbitrary test inputs. Observation 2 (Two rails). The state therefore consists of two “rails”—an -rail and an -rail —each a register’s freshly written value followed by three delayed copies. The entire word grid is, up to the two injected values per round, redundant. We also recall the elementary projection lemma that frames the whole inversion question. Lemma 1 (Composition cannot restore injectivity). If where is a non-injective projection, then no further composition on the output side recovers the information discards. A single “still” (the digest) cannot, by post-processing alone, regenerate the “stream” (the trajectory) it was projected from. The trajectory of SHA-256 is reversible given the schedule; the digest alone is not. Everything below lives on the right side of this distinction. The constants as cube-root edges The SHA-256 constants are not arbitrary. The eight initial registers are the first thirty-two fractional bits of the square roots of the first eight primes, and the sixty-four round constants are the first thirty-two fractional bits of the cube roots of the first sixty-four primes. We verified the derivation to high precision: for example yields and yields , while yields and yields , all matching the standard exactly. The arithmetic admits one geometric remark, kept deliberately modest. A prime is a whole number; its cube root is irrational. The constant is therefore the prime turned through its own root—the same value (it cubes back exactly, ) presented in a different state (an endless fraction), with the first thirty-two bits retained. In the edge/volume language of Section 8, the cube root is the edge that builds the prime as a volume; the constant is that edge, truncated to thirty-two bits. Two properties follow that the standard relies on for diffusion: the constants are “nothing up my sleeve” (fixed by the primes, not chosen), and their bits are well mixed (an irrational fraction has no short pattern). We record the geometry as a description of the construction, not as a claim beyond it. A Constraint-Query Language Five primitives We abstract the structural questions one wants to ask of a deterministic function into five composable primitives. Each has a precise referent in the formal-methods literature, indicated in parentheses. (forward/backward slicing; pre-/post-image). Every query declares whether it traverses the dependency graph from causes to effects (forward: given a seed, what follows) or from effects to causes (backward: given a boundary, what is forced). Choosing the wrong direction produces a false negative: a structure that reads cleanly one way can appear opaque the other. (the pinned condition; the SELECT target). Every query fixes something known—a digest, a seed, a truncation—and asks what that pinning forces in the interior. (cone of influence; program slice). The query returns how far the boundary’s influence extends before it goes dark or saturates—a profile of forcing-width per step, not a single value. (unsatisfiable core; minimal correction set; the remainder after echo removal). The query removes the part of a structure explained by carried/duplicated content and reports what remains, and whether the removal was exact. (the grain of the answer: word, bit, or shape). The query declares whether it asks for exact values, for bits, or only for which units are active (the support, or “shape”). Coarser resolutions read deeper than finer ones. The template These compose into a declarative form deliberately reminiscent of SQL, with relational algebra replaced by constraint operations: SELECT [forced quantity] FROM [boundary] READING [direction] AT [resolution] CHECKING [residue]. The two primitives most prone to operator error—Direction and Resolution—thus sit in the call signature itself, so a query that points the wrong way or over-sharpens fails calibration rather than silently returning a plausible artifact. Mapping to formal methods Each primitive corresponds to an established operation, which is what makes the language a re-packaging of known techniques into a uniform declarative form rather than a novel solver (Table 1). The intent is the same shift relational databases underwent: from imperative traversal to a declarative query whose optimizer performs the structural",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 50,
+        "id": 8,
+        "frontier_topics": [
+          "mamba_state_space"
+        ]
+      },
+      {
+        "title": "International approaches to assessing the labor complexity for various specialists with higher medical education (physicians)",
+        "authors": [
+          "E.S. Akhapkina",
+          "V. V. Оmelyanovskiy",
+          "O.N. Tulupova",
+          "А.Н. Наркевич",
+          "I. А. Mikhailov",
+          "Elizaveta Rumiantseva",
+          "Е. S. Samsonova",
+          "D. V. Fedyaev",
+          "A.A. Anikeev"
+        ],
+        "year": 2026,
+        "date": "2026-06-26",
+        "venue": "Medical Technologies Assessment and Choice",
+        "doi": "https://doi.org/10.17116/medtech20264802170",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.17116/medtech20264802170",
+        "pdf_url": "https://www.stac.scot.nhs.uk/wp-content/uploads/JE-Handbook-Updated-Feb-2024.pdf",
+        "abstract": "Objective. To analyze international approaches to assessing the labor complexity for different specialists with higher medical education (physicians). Material and methods. We performed a systematic searching and content analysis of foreign and national studies and documents devoted to labor complexity of different specialists with higher medical education (doctors). A group of experts among the authors of this study discussed and identified significant factors in assessing complexity. Results. There are 2 main systems to assess physician workload complexity in foreign countries. The first approach is based on analysis of «patient complexity» and includes number of comorbidities and prescribed medications, mental disorders, admission and redo admission rate, risk of mortality. The second approach involves assessing the overall workload, including work-related, mental, and emotional stress. After analysis of international and national approaches to assessing the labor complexity of medical stuff, specialists of the Center for Expertise and Quality Control of Medical Care developed a set of 8 factors for assessing the complexity of work of various doctors taking into account specifics of their professional activities. Conclusion. Analysis of international approaches to assessing the labor complexity of medical stuff underlies expert survey to rank various factors of work complexity relative to each other.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "generic visual counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 9,
+        "frontier_topics": []
+      }
+    ],
+    "top_cited": [
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20321934",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20321934",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20321934",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 0,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+        "authors": [
+          "Jinxin Liu",
+          "Yuan Shi"
+        ],
+        "year": 2026,
+        "date": "2026-10-21",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20323323",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20323323",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20323323",
+        "abstract": "Pathology-Aware Representation Learning, Prediction, and Synthetic Data in NACC-Style CohortsThis repository contains the full analysis pipeline and supporting code for pathology-aware representation learning, neuropathology prediction, and DDPM-based synthetic patient generation in NACC-style datasets, together with harmonized external cohorts (ROSMAP and Munich Neurobiobank).The deposit is organized into three main components:Main Clean Code.ipynb – final integrated TabPFN/SEM/DDPM pathology pipeline and prediction workflows.1Rosmap&NbmDtata2NaccStyle.ipynb – harmonization of ROSMAP and Munich Neurobiobank into NACC-compatible tables and joint latent-factor export.1RawCode.zip – archive of original scripts used during development, figure generation, and SHAP-based interpretation.1Additional model result bundles (e.g. DDPMModel&Result.zip, CoPathologyModel&Result.zip) provide trained models and evaluation outputs corresponding to the pipelines in the main notebook.11. Main Clean Code.ipynbPurposeMain Clean Code.ipynb is the primary research pipeline. It composes several interlocking workflows for:TabPFN-based embedding learning from clinical features with explicit NACCID traceability.Construction of five normalized pathology latent variables (0–1) via TabPFN imputation, correlation filtering, and SEM.DDPM-based conditional synthetic patient generation over the 5D pathology latent space (healthy → maximal pathology).Downstream prediction pipelines for ordinal and continuous neuropathology targets, including co-pathology and cost-group analyses, ROC/PR evaluation, and DDPM-augmented oversampling variants.11.1 TabPFN Embedding WorkflowThis section loads a NACC-style training CSV, performs standardized cleaning, and trains a TabPFN-based embedding model:Cleans custom missing codes (e.g. 8, 9, 88, 99, 888, 999, 88.8, 99.9) to NaN in numeric columns.Derives an lvSUM target as the sum of latent variables lv1–lv5 and keeps only rows with non-missing lvSUM.Extracts numeric clinical features while excluding pathology targets, NACCID, and lv columns, then fits a TabPFNEmbedding model on $X$ with target lvSUM.Saves:Embeddings as .npy (train_tabpfn_lvsum_embeddings.npy) and .csv with NACCID, lvSUM, and a sample_index column.Feature-name list and a small summary CSV with number of samples, features, device, and checkpoint paths.Throughout, the notebook enforces strict alignment between rows and NACCID and aborts if counts diverge.1This produces TabPFN embeddings that can be reused across downstream models while preserving sample-level traceability.1.2 Pathology Latent-Variable Module (SEM 0–1 Factors)The pathology latent module builds a 5D latent pathology representation scaled to:1Pathology feature extraction and imputationLoads neuropathology tables (e.g. Thal phase, CERAD, Braak stage, NIA–Reagan, TDP-43, Lewy body staging, infarcts, hemorrhages, vascular markers).Casts all selected pathology columns to numeric and imputes missing values column-wise using a TabPFN classifier trained on the other pathology features.1Correlation filtering / multicollinearity handlingUses absolute pairwise correlations to identify highly collinear measure groups (e.g. Braak stage vs BRAAKBScore) and keeps a single representative per group, logging which variables were kept and removed.1SEM latent-factor modelBuilds a SEM specification where each latent pathology factor (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, cerebrovascular) loads onto its corresponding manifest pathology indicators.Standardizes inputs, fits the model with semopy, and extracts factor scores, padding to 5 latent dimensions if needed.1Scaling to 0–1 and savingApplies a MinMax scaler to map factor scores to, where 0 ≈ low/no pathology and 1 ≈ maximal observed pathology.1Saves:LV1–LV5 columns plus NACCID as a dataframe.The scaling object (latent0to1_scaler.pkl) for later reuse.1These five normalized latent pathology factors are then merged with clinical tables and used as conditioning variables for DDPM sampling and for downstream modeling.1.3 DDPM-Based Synthetic Patient Generation (Latent 0–1)The DDPM section trains a conditional denoising diffusion model on TabPFN embeddings and latent pathology labels:TabPFN embedding with missingness masksConcatenates TabPFN probability embeddings with standardized missing-value masks for all clinical features.Stores the quantile transformer, mask scaler, and feature metadata in embedding_transformers.pkl to invert embeddings back to feature space.1DDPM architectureImplements a fully connected residual DDPM with:Time embedding (nn.Embedding+MLP), latent pathology embedding, and residual blocks with SiLU activations and LayerNorm.Diffusion schedule with 1000 steps and linear betas.1Training and generationTrains the DDPM on real training embeddings plus 5D latent pathology labels with cosine annealing LR for 300 epochs, saving model weights.Samples from the model for three canonical pathology settings:Healthy: all 0s in latent space (synthetichealthy0.csv).Moderate: all 0.5s (syntheticmoderate05.csv).Max pathology: all 1s (syntheticmaxpatho1.csv).Uses embedding_to_real_data to invert TabPFN probabilities and masks back to reconstructed feature space, assigning random values to masked entries as an approximate reconstruction step.1These synthetic cohorts are intended for distribution-shift analysis, DDPM-based oversampling, and qualitative exploration, not as direct replacement for real clinical data.1.4 Pathology Prediction PipelinesSeveral prediction workflows are implemented:Classical ML regression/classification per pathology groupLoads pathology targets and multiple clinical feature tables.For each pathology group (e.g. amyloid, tau/Braak/ADNC, TDP-43, Lewy, CVD), iterates over tables and targets, applying:Train/test splits (random or stratified for classification).Table-specific preprocessing with ColumnTransformer (median imputation for numeric features and one-hot encoding for categorical).Model fitting for Decision Trees, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost with optional grid search.Saves per-target models, metrics, and diagnostic plots into a nested output directory structure grouped by pathology, table, and model name.21Ordinal TabPFN + Random Forest ensemblesFor strictly ordinal targets, uses TabPFN-based classifiers combined with Random Forests in a VotingClassifier ensemble, with optional SMOTE or DDPM-based oversampling of rare classes.Computes comprehensive ordinal metrics: exact accuracy, ordinal MAE, weighted kappa, class-wise recall, and AUC for binary tasks.1Independent, leakage-robust pipelinesImplements stricter pipelines where each target is predicted from features only, with no other targets used as inputs, explicit train-only preprocessing, stratified splits, and explicit memory/CUDA cleanup after each target.21Co-pathology and cost-group analysesDefines cost groups over subsets of clinical tables (e.g. “low-cost clinical”, “imaging + biomarkers”) and evaluates pathology prediction across these groups.Provides post-processing scripts that aggregate per-target ROC/PR curves into micro/macro averaged ROC/PR summaries across experiments, and generates multi-panel plots comparing cost groups.21Outputs from these pipelines – including per-target metrics, feature-importance plots, and cost-group ROC/PR figures – are stored under the various pathology*results folders and bundled in CoPathologyModel&Result.zip.212. Rosmap&NbmDtata2NaccStyle.ipynbPurposeRosmap&NbmDtata2NaccStyle.ipynb (referred to in the Zenodo UI as Rosmap&NbmDtata2NaccStyle.ipynb) handles harmonization of external cohorts into a strict NACC-style schema. It standardizes ROSMAP and Munich Neurobiobank datasets to align column names, coding, and structure with the NACC clinical and pathology templates, enabling seamless reuse of the main TabPFN/SEM/DDPM pipeline on external cohorts.12.1 ROSMAP → NACC-style conversionThe ROSMAP section:Maps ROSMAP variables onto NACC-style columns for:Demographics, APOE and genetics, cognitive testing (e.g. MMSE), CSF biomarkers, imaging, and clinical diagnoses.Autopsy and neuropathology variables (amyloid, tau, Lewy body, TDP-43, vascular lesions).Derives diagnosis indicators by parsing text descriptions and structured fields, using rule-based patterns to infer NACC-like diagnosis flags when only textual pathology summaries are available.Encodes yes/no or ordinal fields into NACC-style categorical codes (e.g. 0/1, 1–3).Saves:A NACC-shaped ROSMAP clinical+pathology CSV with NACC-conformant columns.A mapping/review file documenting each ROSMAP source column, its NACC target, and any transformation logic applied.12.2 Munich Neurobiobank → NACC-style conversionThe Munich Neurobiobank section performs an analogous harmonization:Links Munich-specific clinical and pathology fields to NACC column names wherever possible.Converts free-text symptom and diagnosis descriptions into structured indicators using keyword rules and pattern matching.Implements proxy rules when multiple candidate variables map to the same NACC column, preferring the least-missing or clinically most specific source.Produces:A NACC-like CSV for the Munich Neurobiobank with standardized naming and coding.A mapping file summarizing source-to-target mappings and any proxy choices.12.3 Joint export with latent pathology factorsThe notebook also contains a companion workflow that merges:Harmonized clinical data from ROSMAP or Munich Neurobiobank.Real pathology variables (when available).Five pre-computed 0–1 latent pathology factors (frozen scaling).into a single NACC-style CSV per cohort, ready for downstream modeling in the main TabPFN/SEM/DDPM notebook.13. RawCode.zipRawCode.zip contains the original development scripts used during the project. These scripts include:Early versions of model training pipelines and correlation analyses.Figure-generation scripts (e.g. cross-correlation heatmaps across NACC tables, raincloud plots, fores",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "multimodal object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Multimodal / Open-Vocabulary",
+        "score": 70,
+        "id": 1,
+        "frontier_topics": [
+          "robustness_test_time_training",
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "Noise-Resilient Quantum Extreme Learning Machines for Astrophysical Spectral Analysis",
+        "authors": [
+          "Marco Vetrano"
+        ],
+        "year": 2026,
+        "date": "2026-07-07",
+        "venue": "Nova Science Publishers (Nova Science Publishers, Inc.)",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://hdl.handle.net/10447/709404",
+        "pdf_url": "https://iris.unipa.it/bitstream/10447/709404/2/PhD_Thesis.pdf",
+        "abstract": "In this thesis we investigate the information processing capabilities of Quantum Extreme Learning Machines and discuss their real world applications in the field of astrophysics, particularly for atmospheric retrieval of exoplanets and supernovae spectral analysis, designing noise resilient models for Noise Intermediate Scale Quantum (NISQ) implementations. Extreme Learning Machines (ELMs) offer rapid training and structural efficiency by utilizing a randomized hidden layer—the reservoir—to map input data into a high-dimensional feature space, effectively linearizing complex learning problems. While traditionally implemented via randomized classical neural networks, the mathematical properties of these reservoirs naturally extend to complex physical systems. This universality has driven the development of Quantum Extreme Learning Machines (QELMs), which utilize quantum systems as the computational reservoir. In the field of physical extreme learning machines, information is processed through the internal dynamics of the system and recollected by measuring the system. In the context of QELMs, this consists in selecting a set of observables or a POVM to be measured on the reservoir, whose outcomes is then used to train the post-processing layer.In this work, we will first review the foundations of Neural Networs, ELMs and Reservoir Computers, highlighting specifically on similarities and fundamental differences between these models and develop the theory behind the quantum counterparts. Then, we demonstrate that QELMs can efficiently process and estimate quantum states well beyond the reservoir's scrambling time, beyond which the information should be irretrievable through local measurements. Furthermore, we show that within this regime, specific classes of Hamiltonians achieve reconstruction accuracies matching those of global random unitary dynamics. Following these theoretical aspects, we design noise-resilient QELM architectures tailored for the spectral analysis of complex astrophysical phenomena. We apply these models to exoplanetary atmospheric retrieval and supernova remnant datasets, particularly deploying the algorithm for the exoplanetary context on real quantum hardware (IBM Fez). By evaluating various pre-processing and encoding strategies—including Dense Angle Encoding, IQP embedding, and Data Re-uploading—we demonstrate that these noise-resilient QELMs are highly adaptable to different classes of astrophysical objects and capable of extracting critical spectral parameters also on NISQ devices, paving the way for real world applications of Quantum Computing in the astrophysical field.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "few-shot object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Dataset / Benchmark",
+        "score": 50,
+        "id": 2,
+        "frontier_topics": [
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The Hidden Backbone of Knowledge Transfer: A Taxonomy and Archetypes of Transfer Data in Non-University Research Institutions",
+        "authors": [
+          "Anna Gieß",
+          "Josip Lovrekovic",
+          "Masoumeh Tavakoligargari",
+          "Manuel Etzkorn",
+          "Jan Jürjens",
+          "Harald F. O. von Korflesch",
+          "Peter Fettke"
+        ],
+        "year": 2026,
+        "date": "2026-07-05",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "https://aisel.aisnet.org/pacis2026/it_strategy/it_strategy/1",
+        "pdf_url": "https://aisel.aisnet.org/context/pacis2026/article/1152/viewcontent/1162_doc.pdf",
+        "abstract": "Knowledge transfer (KT) in non-university research institutions (NURIs) is often studied through mechanisms and relationships, while the concrete data objects crossing organizational boundaries remain underspecified. These transfer data (e.g., reports, publications, datasets) shape accountability, access control, reuse, and compliant handling. Yet conceptual clarity and a classification scheme for comparing them across transfer contexts are lacking. We propose a taxonomy of transfer data based on a systematic literature review, 12 expert interviews in German NURIs, and the classification of 234 empirically identified data objects. Building on this taxonomy, we derive three archetypes through exploratory hierarchical clustering: compliance and accountability information, operational coordination data, and scientific knowledge core. Our work advances KT research by shifting the unit of analysis from transfer mechanisms to transfer data and helps practitioners align governance rules with distinct data archetypes.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Dataset / Benchmark",
+        "score": 40,
+        "id": 3,
+        "frontier_topics": [
+          "benchmark_dataset"
+        ]
+      },
+      {
+        "title": "The misled mind",
+        "authors": [
+          "Richard Paul Farry"
+        ],
+        "year": 2026,
+        "date": "2026-07-01",
+        "venue": "University of Birmingham Institutional Research Archive (University of Birmingham)",
+        "doi": "",
+        "arxiv_id": "",
+        "url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+        "pdf_url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+        "abstract": "Abstract 1 Cases of the confabulation of propositional attitudes have been used by Carruthers (2013) as evidence that we lack introspective access to our propositional attitudes, and that instead our route to self-knowledge is via self-interpretation. In this paper I defend this position from objections raised by Andreotta (2021) that Carruthers’ claimed cases of self-misattributions do not show people misattributing their propositional attitudes. In response to Andreotta’s objection for a particular case involving a split-brain patient, that the apparent misattribution involved a fabricated explanation, not a fabricated intention, I argue that this objection does not hold for cases where self-attributions are made retrospectively. Secondly, I explore the unwelcome consequences of accepting a separate objection from Andreotta that some claimed cases of misattributions are instances of propositional attitudes being influenced by perceptual cues. Accepting this objection would entail that we are mercurial beings, which plainly we are not, or that additional attitude-like mental features would be required to avoid this entailment. In defending self-interpretation accounts of self-knowledge, I seek to show that compared to direct access views they can more plausibly account for why our self-reports are swayed by perceptual cues. I go on to make the case that confabulations are a normal and everyday occurrence, and as such, our confabulations mainly go unnoticed, get glossed over, or become self-fulfilling. Consequently, the level of behavioural incongruence with self-attributions required by critics to show that confabulations have occurred is too demanding. Abstract 2 We experience things like redness and painfulness—the qualitative aspects of experience—which seem difficult to account for in terms of the brain and information processing. This difficulty arises, because the qualitative aspects of experience seem to have features which (when taken at face value) seemingly do not fit comfortably with a physicalist and mechanistic view of the brain. There are several different approaches to resolving this difficulty, including Keith Frankish’s (2017; 2023) Illusionism. According to Illusionism we only seem to experience things like redness and painfulness. They do not really exist, rather they are the result of a misrepresentation or illusory perspective, somewhat analogous to the apparent existence of rainbows as arcs in the sky. In this paper I present a novel argument in support of Illusionism, that as evolved entities we should expect our various mental capacities to track usefulness rather than accuracy. As such the way things seem to us seem the way that they do because they have developed to be useful, rather than truth-tracking, and so we should not expect our qualitive experiences to provide us with a view of how things really are. The various perceptual illusions and cognitive biases that we experience show that in a range of cases such expectations are correct. As a result, we should be wary of using our qualitative experiences as a basis for determining what things really are, and in particular the metaphysical status of those experiences. Abstract 3 In this paper I argue in favour of radical cognitive extension, sometimes referred to as cognitive bloat. According to the Extended Mind Thesis (Clark and Chalmers 1998), under the right conditions cognition and the mind can extend over external artefacts like notebooks. Various critics—along with Clark and Chalmers 1998—seek to limit the scope of the thesis, often appealing to a reductio ad absurdum. However, rather than the implications of the Extended Mind Thesis being absurd, I claim they are counter-intuitive but revealing insights into the nature of cognition, and processes in general. In this paper I argue against Clark and Chalmers’ (1998) ‘Availability and Portability’ Criteria and consider a parallel case of Extended Digestion and the extent to which we consider entities apt for a particular functional role is based on human-centric concerns, to make the case for a wide view of cognitive extension, in favour of cognitive bloat.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 4,
+        "frontier_topics": []
+      },
+      {
+        "title": "Metaphor and Linguistic Personality in Kazakhstan’s Political Discourse (Case Study of the State of the Nation Address)",
+        "authors": [
+          "О. G. Alexeyeva",
+          "Zh.N. Zhunussova",
+          "B.K. Ayazbayeva",
+          "N.K. Khan",
+          "V. A. Yеrmakova"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "Bulletin of the Karaganda University Philology series",
+        "doi": "https://doi.org/10.31489/2026phi2(122)/17-28",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.31489/2026phi2(122)/17-28",
+        "pdf_url": "https://philology-vestnik.buketov.edu.kz/philology-vestnik/article/download/1338/542",
+        "abstract": "This article analyzes the construction of political reality and the communicative behavior of the linguistic personality in contemporary Kazakhstani political discourse. The object of the study is the official text of the Address delivered by Head of State Kassym-Jomart Tokayev on September 1, 2024. The research is significant due to the study justified by the necessity for a comprehensive linguistic examination of the pivotal political text that influences the national agenda during the period of substantial social and economic transformations. The scientific novelty stems from the integrated comprehensive, integrated approach combining Cognitive Linguistics (examining conceptual metaphors through A.P. Chudinov’s typology and G. Lakoff’s theory), Discourse Analysis (evaluating communicative strategies per O.S. Issers), and Content Analysis — a combination not previously applied to this material. The findings reveal that the primary rhetorical device in the Address is a dual system of conceptual metaphors. The creative artifact metaphor (the state is a mechanism / construction) dominates, accounting for approximately 60 % of all metaphors. This creates an image of a rational, manageable, and technological process of state governance. This model is systematically juxtaposed with Threat metaphors-sociomorphic (War) and Anthropomorphic (Morbus) to contextualize issues and legitimize the authorities’ decisive actions. The distinctive traits of the linguistic personality of the Address’s author are examined, leading to the conclusion that the author exemplifies the rational-technocratic type of linguistic personality. The image of a leader, whose legitimacy is predicated on competence and efficacy rather than emotional appeal, is formulated through the synergy of specialized vocabulary, prevailingmetaphorical frameworks, and strategic communication techniques (including self-presentation, argumentation, discreditation, and unification). Ultimately, the article elucidates linguistic phenomena and illustrates how the worldview and pragmatic objectives of a national leader are encoded in political discourse through a sophisticated array of discursive mechanisms.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 50,
+        "id": 5,
+        "frontier_topics": [
+          "training_free_foundation_model"
+        ]
+      },
+      {
+        "title": "Structure-Aware Hierarchical Sha-256 Hashing for Dicom Integrity Verification in Consortium Blockchain Systems",
+        "authors": [
+          "Dendy Jonas",
+          "Danny Manongga",
+          "Irwan Sembiring",
+          "Indrastanti Ratna Widiasari"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "Journal of Artificial Intelligence and Technology",
+        "doi": "https://doi.org/10.37965/jait.2026.1376",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.37965/jait.2026.1376",
+        "pdf_url": "https://ojs.istp-press.com/jait/article/download/1376/827",
+        "abstract": "Integrity verification of DICOM-based medical data is a critical requirement in distributed healthcare systems, where conventional hashing methods operate at the file level and do not account for the internal structure of medical images. Existing approaches treat DICOM files as undifferentiated byte streams, limiting sensitivity to localized modifications in metadata and pixel-level content. This study addresses this limitation by evaluating a structure-aware hierarchical hashing scheme that incorporates intrinsic DICOM attributes into the hashing process. The objective is to assess whether integrating metadata features, pixel-based descriptors, and entropy measures within a hierarchical SHA-256 framework influences the statistical characteristics of hash outputs. An experimental comparative design is implemented using 427 DICOM files. The proposed method applies a multi-component HMAC-SHA256-based hashing pipeline and is evaluated against standard SHA-256, SHA-3, and locality-sensitive hashing (LSH). Evaluation metrics include entropy (bounded between 0 and 8), bit distribution, chi-square statistics, Kolmogorov–Smirnov test results, avalanche effect, and execution time. The results indicate that all methods maintain statistically valid output distributions, while the proposed approach exhibits greater variability in entropy values within the valid range, consistent bit balance, lower deviation in distributional tests relative to LSH, and stable avalanche behavior across structured input variations. Execution time increases moderately due to multi-stage processing. These findings show that hierarchical decomposition produces enhanced sensitivity to input structure without altering deterministic hashing properties. The study contributes a domain-aware hierarchical hashing framework that integrates DICOM structural components into hash generation. This contribution demonstrates that structure-aware hashing enables more sensitive detection of input-level variations while preserving statistical correctness, providing a methodologically grounded approach for integrity verification in medical data systems without extending claims to cryptographic superiority.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "generic visual counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 6,
+        "frontier_topics": []
+      },
+      {
+        "title": "A semantic matching method for calculating textual spatial correlation",
+        "authors": [
+          "Peiyuan Qiu",
+          "Shu Wang",
+          "Huaqiao Xing",
+          "Y C Zhu",
+          "Fengxiang Jin"
+        ],
+        "year": 2026,
+        "date": "2026-06-27",
+        "venue": "International Journal of Digital Earth",
+        "doi": "https://doi.org/10.1080/17538947.2026.2694150",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.1080/17538947.2026.2694150",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/17538947.2026.2694150?needAccess=true",
+        "abstract": "Textual spatial correlation quantifies the degree of association between knowledge described in text and specific geographic spaces. For example, the statement ‘the nutria is an invasive species’ is valid only in certain regions. In geographic information science, measuring textual spatial correlation is not only a fundamental prerequisite for spatiotemporal computing, but also a cornerstone for high-precision geo-artificial intelligence applications. To address the limitations of annotation dependency and low computational efficiency in the existing methods, this study proposed a Spatial Correlation Index and corresponding calculation method. This method fully leverages implicit spatial knowledge from a large-scale knowledge base and through a semantic-matching mechanism, enabling the efficient calculation of textual spatial correlation. The effectiveness of the method was evaluated based on the spatial correlation calculations of textual data and entities in a knowledge graph. Results demonstrate that the proposed method achieves performance comparable to few-shot prompted GPT-4.1 and DeepSeek-V3, while outperforming their zero-shot counterparts, with average F1-score improvements of 18.65% and 27.27%, respectively. Meanwhile, the proposed method reduces the average calculation time by 77.37% and 77.74%, respectively. This study achieved a breakthrough in efficiently measuring textual spatial correlations, thereby providing an essential technical foundation for spatial-related intelligent computing.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "few-shot object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "Zero-Shot Object Counting",
+        "score": 40,
+        "id": 7,
+        "frontier_topics": []
+      },
+      {
+        "title": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure",
+        "authors": [
+          "Dean Kulik"
+        ],
+        "year": 2026,
+        "date": "2026-06-26",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.20877041",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.5281/zenodo.20877041",
+        "pdf_url": "https://doi.org/10.5281/zenodo.20877041",
+        "abstract": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure Driven by Dean Kulik June 2026 We develop and test a small, declarative query language for interrogating the structure of deterministic functions, built from five primitives—Direction, Boundary, Wedge (reach), Residue, and Resolution—and a SELECT/FROM/READING template. Rather than computing a function’s output, the language poses structural questions to it: what a boundary forces, how far that forcing reaches, and what residue remains once carried echo is removed. To validate the language, we calibrate every primitive against SHA-256, whose round function is a known bijection given the message schedule and therefore supplies clean ground truth. All four implemented primitives return ground truth (e.g. bits of internal state forced from the digest alone, verified words). We then apply the calibrated language to produce a three-dimensional action-axis decomposition of the SHA-256 state grid: lifting each cell by the operation that wrote it rather than its value. The decomposition separates a flat, redundant conveyor echo ( of cells, exactly the six shift-coupled registers) from a action axis confined to the two injection registers and , within which a carry buckle carries the function’s nonlinearity and is provably carry-free at the least-significant bit. Three independently computed structural features—the conservation-law seam, the residual “escape” bits, and the carry relief—all localize to the same two register rails. We state the operative boundary explicitly and repeatedly: every result here is a property of the forward trajectory or its structural residue; none inverts SHA-256 from the digest alone, and preimage and collision resistance are untouched. We close with the geometric base case (the degenerate “-ray” triangle), an account of the readable-versus-sealed boundary that the work charts, a clearly bracketed interpretive section, and a falsifiability ledger that preserves negative results. Introduction Most interrogation of data is extensional: we store records and retrieve them. But many objects of interest are not stored—they are intensional, defined by rules that generate an enormous or infinite state space. A cryptographic hash, a transcendental constant, a neural network, and a system of access-control policies are all of this kind: the interesting facts are structural—which variables are forced, which constraints conflict, how far an influence reaches—and asking them by enumeration is hopeless. This paper takes a deliberately narrow and testable stance toward such structure. We propose that a useful way to study a deterministic function is not to compute it, but to query it with a small fixed vocabulary of structural operations, and that the right way to gain confidence in such a vocabulary is to calibrate it against a domain where the ground truth is fully known. We use SHA-256 as that calibration domain for one reason: its compression round is a bijection given the message schedule, so it is a deterministic object with no rounding, no approximation, and no ambiguity. If a structural query returns the right answer there—where we can check it against the actual computation—we have evidence that the query is sound, and a basis for using it where ground truth is not in hand. The governing methodology is simple and we hold to it throughout: a claim counts only if executable code produces it, and we distinguish sharply between three statuses. Verified results are reproduced by code and checked against ground truth. Open questions are posed precisely but not settled. Interpretive readings are organizing metaphors that the present evidence does not establish; we confine these to a clearly labeled section and we do not let them masquerade as results. Negative results are preserved as navigational data rather than discarded. Contributions. (1) A five-primitive constraint-query language with a declarative template, related to existing notions in formal methods (program slicing, cone-of-influence reduction, backbone extraction, unsatisfiable cores). (2) A calibration of all four implemented primitives against SHA-256 ground truth. (3) A three-dimensional action-axis decomposition of the SHA-256 state grid that localizes the function’s irreducible nonlinear content to a carry relief on two register rails, and demonstrates that three independent structural features coincide on those same rails. (4) An explicit account of the boundary the work respects—no inversion from the digest, preimage resistance intact—and a falsifiability ledger. Preliminaries: SHA-256 as a Structured Lattice We briefly fix notation. SHA-256 processes -bit message blocks. Each block is expanded into a schedule of sixty-four -bit words by the recurrence with the message words and fixed rotate-shift mixers. The compression function maintains eight -bit registers , initialized to the constants , and iterates sixty-four rounds: The round is an Add–Rotate–Xor (ARX) construction. Its nonlinearity comes not from randomness but from the interaction of three individually linear operations under different algebras: integer addition (carry), bitwise XOR, and rotation. Two structural facts follow immediately from the update rule and recur throughout the paper. Observation 1 (The register conveyor). Only and receive a freshly computed value each round; the remaining six registers are exact, delayed copies: We verified these six identities hold with zero mismatches across all rounds for the empty message and for arbitrary test inputs. Observation 2 (Two rails). The state therefore consists of two “rails”—an -rail and an -rail —each a register’s freshly written value followed by three delayed copies. The entire word grid is, up to the two injected values per round, redundant. We also recall the elementary projection lemma that frames the whole inversion question. Lemma 1 (Composition cannot restore injectivity). If where is a non-injective projection, then no further composition on the output side recovers the information discards. A single “still” (the digest) cannot, by post-processing alone, regenerate the “stream” (the trajectory) it was projected from. The trajectory of SHA-256 is reversible given the schedule; the digest alone is not. Everything below lives on the right side of this distinction. The constants as cube-root edges The SHA-256 constants are not arbitrary. The eight initial registers are the first thirty-two fractional bits of the square roots of the first eight primes, and the sixty-four round constants are the first thirty-two fractional bits of the cube roots of the first sixty-four primes. We verified the derivation to high precision: for example yields and yields , while yields and yields , all matching the standard exactly. The arithmetic admits one geometric remark, kept deliberately modest. A prime is a whole number; its cube root is irrational. The constant is therefore the prime turned through its own root—the same value (it cubes back exactly, ) presented in a different state (an endless fraction), with the first thirty-two bits retained. In the edge/volume language of Section 8, the cube root is the edge that builds the prime as a volume; the constant is that edge, truncated to thirty-two bits. Two properties follow that the standard relies on for diffusion: the constants are “nothing up my sleeve” (fixed by the primes, not chosen), and their bits are well mixed (an irrational fraction has no short pattern). We record the geometry as a description of the construction, not as a claim beyond it. A Constraint-Query Language Five primitives We abstract the structural questions one wants to ask of a deterministic function into five composable primitives. Each has a precise referent in the formal-methods literature, indicated in parentheses. (forward/backward slicing; pre-/post-image). Every query declares whether it traverses the dependency graph from causes to effects (forward: given a seed, what follows) or from effects to causes (backward: given a boundary, what is forced). Choosing the wrong direction produces a false negative: a structure that reads cleanly one way can appear opaque the other. (the pinned condition; the SELECT target). Every query fixes something known—a digest, a seed, a truncation—and asks what that pinning forces in the interior. (cone of influence; program slice). The query returns how far the boundary’s influence extends before it goes dark or saturates—a profile of forcing-width per step, not a single value. (unsatisfiable core; minimal correction set; the remainder after echo removal). The query removes the part of a structure explained by carried/duplicated content and reports what remains, and whether the removal was exact. (the grain of the answer: word, bit, or shape). The query declares whether it asks for exact values, for bits, or only for which units are active (the support, or “shape”). Coarser resolutions read deeper than finer ones. The template These compose into a declarative form deliberately reminiscent of SQL, with relational algebra replaced by constraint operations: SELECT [forced quantity] FROM [boundary] READING [direction] AT [resolution] CHECKING [residue]. The two primitives most prone to operator error—Direction and Resolution—thus sit in the call signature itself, so a query that points the wrong way or over-sharpens fails calibration rather than silently returning a plausible artifact. Mapping to formal methods Each primitive corresponds to an established operation, which is what makes the language a re-packaging of known techniques into a uniform declarative form rather than a novel solver (Table 1). The intent is the same shift relational databases underwent: from imperative traversal to a declarative query whose optimizer performs the structural",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "open-vocabulary object counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 50,
+        "id": 8,
+        "frontier_topics": [
+          "mamba_state_space"
+        ]
+      },
+      {
+        "title": "International approaches to assessing the labor complexity for various specialists with higher medical education (physicians)",
+        "authors": [
+          "E.S. Akhapkina",
+          "V. V. Оmelyanovskiy",
+          "O.N. Tulupova",
+          "А.Н. Наркевич",
+          "I. А. Mikhailov",
+          "Elizaveta Rumiantseva",
+          "Е. S. Samsonova",
+          "D. V. Fedyaev",
+          "A.A. Anikeev"
+        ],
+        "year": 2026,
+        "date": "2026-06-26",
+        "venue": "Medical Technologies Assessment and Choice",
+        "doi": "https://doi.org/10.17116/medtech20264802170",
+        "arxiv_id": "",
+        "url": "https://doi.org/10.17116/medtech20264802170",
+        "pdf_url": "https://www.stac.scot.nhs.uk/wp-content/uploads/JE-Handbook-Updated-Feb-2024.pdf",
+        "abstract": "Objective. To analyze international approaches to assessing the labor complexity for different specialists with higher medical education (physicians). Material and methods. We performed a systematic searching and content analysis of foreign and national studies and documents devoted to labor complexity of different specialists with higher medical education (doctors). A group of experts among the authors of this study discussed and identified significant factors in assessing complexity. Results. There are 2 main systems to assess physician workload complexity in foreign countries. The first approach is based on analysis of «patient complexity» and includes number of comorbidities and prescribed medications, mental disorders, admission and redo admission rate, risk of mortality. The second approach involves assessing the overall workload, including work-related, mental, and emotional stress. After analysis of international and national approaches to assessing the labor complexity of medical stuff, specialists of the Center for Expertise and Quality Control of Medical Care developed a set of 8 factors for assessing the complexity of work of various doctors taking into account specifics of their professional activities. Conclusion. Analysis of international approaches to assessing the labor complexity of medical stuff underlies expert survey to rank various factors of work complexity relative to each other.",
+        "cited_by_count": 0,
+        "source_api": "OpenAlex",
+        "source_query": "generic visual counting",
+        "sources": [
+          "OpenAlex"
+        ],
+        "category": "General Object Counting",
+        "score": 20,
+        "id": 9,
+        "frontier_topics": []
+      }
+    ]
   },
+  "live_feed": [
+    {
+      "title": "CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting",
+      "year": 2026,
+      "score": 85,
+      "category": "Few-Shot / Class-Agnostic",
+      "url": "https://doi.org/10.1109/qpain69676.2026.11546546",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://arxiv.org/abs/2606.17650",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.48550/arxiv.2606.17650",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://arxiv.org/abs/2605.18063",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.48550/arxiv.2605.18063",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Zero-shot Object Counting with Fine-Grained Cross-Modal Enhancement and Multi-Scale Semantic Adaptation",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.1177/18758967261447084",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "RealCount: Robust Open-World Object Counting via Duplex Contrastive Learning",
+      "year": 2026,
+      "score": 75,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.1109/icassp55912.2026.11462715",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+      "year": 2026,
+      "score": 70,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.5281/zenodo.20321934",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+      "year": 2026,
+      "score": 70,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://doi.org/10.5281/zenodo.20323323",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Noise-Resilient Quantum Extreme Learning Machines for Astrophysical Spectral Analysis",
+      "year": 2026,
+      "score": 50,
+      "category": "Dataset / Benchmark",
+      "url": "https://hdl.handle.net/10447/709404",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Metaphor and Linguistic Personality in Kazakhstan’s Political Discourse (Case Study of the State of the Nation Address)",
+      "year": 2026,
+      "score": 50,
+      "category": "General Object Counting",
+      "url": "https://doi.org/10.31489/2026phi2(122)/17-28",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Reading the Mold: A Constraint–Query Decomposition of SHA-256, with a Three-Dimensional Action-Axis Localization of Irreducible Structure",
+      "year": 2026,
+      "score": 50,
+      "category": "General Object Counting",
+      "url": "https://doi.org/10.5281/zenodo.20877041",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "Counting to Four is still a Chore for VLMs",
+      "year": 2026,
+      "score": 50,
+      "category": "Multimodal / Open-Vocabulary",
+      "url": "https://arxiv.org/abs/2604.10039",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "The Hidden Backbone of Knowledge Transfer: A Taxonomy and Archetypes of Transfer Data in Non-University Research Institutions",
+      "year": 2026,
+      "score": 40,
+      "category": "Dataset / Benchmark",
+      "url": "https://aisel.aisnet.org/pacis2026/it_strategy/it_strategy/1",
+      "why_live": "recent, frontier topic, high intelligence score"
+    },
+    {
+      "title": "A semantic matching method for calculating textual spatial correlation",
+      "year": 2026,
+      "score": 40,
+      "category": "Zero-Shot Object Counting",
+      "url": "https://doi.org/10.1080/17538947.2026.2694150",
+      "why_live": "recent, high intelligence score"
+    },
+    {
+      "title": "Learning to count small and clustered objects with application to bacterial colonies",
+      "year": 2026,
+      "score": 40,
+      "category": "General Object Counting",
+      "url": "https://arxiv.org/abs/2604.20030",
+      "why_live": "recent, high intelligence score"
+    },
+    {
+      "title": "The misled mind",
+      "year": 2026,
+      "score": 20,
+      "category": "General Object Counting",
+      "url": "http://etheses.bham.ac.uk//id/eprint/16822/1/Farry2026PhD.pdf",
+      "why_live": "recent"
+    },
+    {
+      "title": "Structure-Aware Hierarchical Sha-256 Hashing for Dicom Integrity Verification in Consortium Blockchain Systems",
+      "year": 2026,
+      "score": 20,
+      "category": "General Object Counting",
+      "url": "https://doi.org/10.37965/jait.2026.1376",
+      "why_live": "recent"
+    },
+    {
+      "title": "International approaches to assessing the labor complexity for various specialists with higher medical education (physicians)",
+      "year": 2026,
+      "score": 20,
+      "category": "General Object Counting",
+      "url": "https://doi.org/10.17116/medtech20264802170",
+      "why_live": "recent"
+    },
+    {
+      "title": "Hunting for extreme high-energy-peaked BL Lacs: Rare to find and difficult to classify",
+      "year": 2026,
+      "score": 20,
+      "category": "General Object Counting",
+      "url": "https://arxiv.org/abs/2606.26475",
+      "why_live": "recent"
+    }
+  ],
+  "daily_digest": [
+    {
+      "title": "CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 85
+    },
+    {
+      "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "Zero-shot Object Counting with Fine-Grained Cross-Modal Enhancement and Multi-Scale Semantic Adaptation",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "RealCount: Robust Open-World Object Counting via Duplex Contrastive Learning",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 75
+    },
+    {
+      "title": "Synthetic Data Enhanced Prediction of the neuropathological landscape of dementia before death using multimodal AI",
+      "reason": "recent, frontier topic, high intelligence score",
+      "score": 70
+    }
+  ],
+  "hot_topics": [
+    {
+      "topic": "benchmark_dataset",
+      "count": 12
+    },
+    {
+      "topic": "robustness_test_time_training",
+      "count": 5
+    },
+    {
+      "topic": "text_guided_open_vocabulary",
+      "count": 5
+    },
+    {
+      "topic": "training_free_foundation_model",
+      "count": 3
+    },
+    {
+      "topic": "mamba_state_space",
+      "count": 3
+    }
+  ],
   "trends": {
-    "years": [],
-    "categories": []
+    "years": [
+      {
+        "x": 2026,
+        "y": 20
+      }
+    ],
+    "categories": [
+      {
+        "x": "Multimodal / Open-Vocabulary",
+        "y": 9
+      },
+      {
+        "x": "General Object Counting",
+        "y": 7
+      },
+      {
+        "x": "Dataset / Benchmark",
+        "y": 2
+      },
+      {
+        "x": "Zero-Shot Object Counting",
+        "y": 1
+      },
+      {
+        "x": "Few-Shot / Class-Agnostic",
+        "y": 1
+      }
+    ]
   },
-  "graph": {},
-  "sota": {},
-  "timeline": {"timeline": []},
-  "daily_digest": []
+  "graph": {
+    "nodes": [
+      {
+        "id": "paper_18",
+        "label": "CountFormer: A Transformer Framework for Learnin",
+        "type": "paper"
+      },
+      {
+        "id": "topic_training_free_foundation_model",
+        "label": "training_free_foundation_model",
+        "type": "topic"
+      },
+      {
+        "id": "topic_robustness_test_time_training",
+        "label": "robustness_test_time_training",
+        "type": "topic"
+      },
+      {
+        "id": "topic_benchmark_dataset",
+        "label": "benchmark_dataset",
+        "type": "topic"
+      },
+      {
+        "id": "paper_11",
+        "label": "MambaCount: Efficient Text-guided Open-vocabular",
+        "type": "paper"
+      },
+      {
+        "id": "topic_text_guided_open_vocabulary",
+        "label": "text_guided_open_vocabulary",
+        "type": "topic"
+      },
+      {
+        "id": "topic_mamba_state_space",
+        "label": "mamba_state_space",
+        "type": "topic"
+      },
+      {
+        "id": "paper_12",
+        "label": "MambaCount: Efficient Text-guided Open-vocabular",
+        "type": "paper"
+      },
+      {
+        "id": "paper_13",
+        "label": "The MixCount Dataset: Bridging the Data Gap for ",
+        "type": "paper"
+      },
+      {
+        "id": "paper_14",
+        "label": "The MixCount Dataset: Bridging the Data Gap for ",
+        "type": "paper"
+      },
+      {
+        "id": "paper_15",
+        "label": "Zero-shot Object Counting with Fine-Grained Cros",
+        "type": "paper"
+      },
+      {
+        "id": "paper_16",
+        "label": "RealCount: Robust Open-World Object Counting via",
+        "type": "paper"
+      },
+      {
+        "id": "paper_0",
+        "label": "Synthetic Data Enhanced Prediction of the neurop",
+        "type": "paper"
+      },
+      {
+        "id": "paper_1",
+        "label": "Synthetic Data Enhanced Prediction of the neurop",
+        "type": "paper"
+      },
+      {
+        "id": "paper_2",
+        "label": "Noise-Resilient Quantum Extreme Learning Machine",
+        "type": "paper"
+      },
+      {
+        "id": "paper_5",
+        "label": "Metaphor and Linguistic Personality in Kazakhsta",
+        "type": "paper"
+      },
+      {
+        "id": "paper_8",
+        "label": "Reading the Mold: A Constraint–Query Decompositi",
+        "type": "paper"
+      },
+      {
+        "id": "paper_19",
+        "label": "Counting to Four is still a Chore for VLMs",
+        "type": "paper"
+      },
+      {
+        "id": "paper_3",
+        "label": "The Hidden Backbone of Knowledge Transfer: A Tax",
+        "type": "paper"
+      },
+      {
+        "id": "paper_7",
+        "label": "A semantic matching method for calculating textu",
+        "type": "paper"
+      },
+      {
+        "id": "paper_17",
+        "label": "Learning to count small and clustered objects wi",
+        "type": "paper"
+      },
+      {
+        "id": "paper_4",
+        "label": "The misled mind",
+        "type": "paper"
+      },
+      {
+        "id": "paper_6",
+        "label": "Structure-Aware Hierarchical Sha-256 Hashing for",
+        "type": "paper"
+      },
+      {
+        "id": "paper_9",
+        "label": "International approaches to assessing the labor ",
+        "type": "paper"
+      },
+      {
+        "id": "paper_10",
+        "label": "Hunting for extreme high-energy-peaked BL Lacs: ",
+        "type": "paper"
+      }
+    ],
+    "links": [
+      {
+        "source": "paper_18",
+        "target": "topic_training_free_foundation_model"
+      },
+      {
+        "source": "paper_18",
+        "target": "topic_robustness_test_time_training"
+      },
+      {
+        "source": "paper_18",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_11",
+        "target": "topic_text_guided_open_vocabulary"
+      },
+      {
+        "source": "paper_11",
+        "target": "topic_mamba_state_space"
+      },
+      {
+        "source": "paper_11",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_12",
+        "target": "topic_text_guided_open_vocabulary"
+      },
+      {
+        "source": "paper_12",
+        "target": "topic_mamba_state_space"
+      },
+      {
+        "source": "paper_12",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_13",
+        "target": "topic_text_guided_open_vocabulary"
+      },
+      {
+        "source": "paper_13",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_14",
+        "target": "topic_text_guided_open_vocabulary"
+      },
+      {
+        "source": "paper_14",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_15",
+        "target": "topic_text_guided_open_vocabulary"
+      },
+      {
+        "source": "paper_15",
+        "target": "topic_training_free_foundation_model"
+      },
+      {
+        "source": "paper_15",
+        "target": "topic_robustness_test_time_training"
+      },
+      {
+        "source": "paper_15",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_16",
+        "target": "topic_robustness_test_time_training"
+      },
+      {
+        "source": "paper_16",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_0",
+        "target": "topic_robustness_test_time_training"
+      },
+      {
+        "source": "paper_0",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_1",
+        "target": "topic_robustness_test_time_training"
+      },
+      {
+        "source": "paper_1",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_2",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_5",
+        "target": "topic_training_free_foundation_model"
+      },
+      {
+        "source": "paper_8",
+        "target": "topic_mamba_state_space"
+      },
+      {
+        "source": "paper_19",
+        "target": "topic_benchmark_dataset"
+      },
+      {
+        "source": "paper_3",
+        "target": "topic_benchmark_dataset"
+      }
+    ]
+  },
+  "sota": {
+    "version": "v4",
+    "benchmarks": {
+      "FSC-147": {
+        "metric": "MAE",
+        "leaderboard": [
+          {
+            "method": "MambaCount",
+            "mae": 12.23,
+            "note": "reported in paper"
+          },
+          {
+            "method": "RT-Counter",
+            "mae": 13.3,
+            "fps": 112.48,
+            "note": "real-time tradeoff"
+          }
+        ]
+      },
+      "CARPK": {
+        "metric": "MAE",
+        "leaderboard": []
+      }
+    },
+    "notes": "v4 seed expanded for auto SOTA extraction"
+  },
+  "timeline": {
+    "timeline": [
+      {
+        "year": 2019,
+        "methods": [
+          "CSRNet",
+          "MCNN"
+        ],
+        "type": "CNN density"
+      },
+      {
+        "year": 2021,
+        "methods": [
+          "FAMNet",
+          "Few-shot counting"
+        ],
+        "type": "few-shot prototype"
+      },
+      {
+        "year": 2023,
+        "methods": [
+          "CounTR",
+          "CLIP-based counting"
+        ],
+        "type": "vision-language"
+      },
+      {
+        "year": 2024,
+        "methods": [
+          "SSD-Count",
+          "Reciprocal counting"
+        ],
+        "type": "transformer evolution"
+      },
+      {
+        "year": 2025,
+        "methods": [
+          "CountingDINO",
+          "SAM2-based counting"
+        ],
+        "type": "foundation model"
+      },
+      {
+        "year": 2026,
+        "methods": [
+          "MambaCount",
+          "RT-Counter",
+          "OVID"
+        ],
+        "type": "state space / real-time"
+      }
+    ]
+  }
 }
