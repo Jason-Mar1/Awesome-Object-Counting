@@ -1,0 +1,22 @@
+{
+  "version": "v4",
+  "score_scale": "0-100+",
+  "weights": {
+    "recency": 20,
+    "citation": 15,
+    "benchmark_presence": 15,
+    "frontier_topic": 20,
+    "code_signal": 10,
+    "sota_signal": 20
+  },
+  "frontier_topics": {
+    "text_guided_open_vocabulary": ["text-guided", "text guided", "open-vocabulary", "open vocabulary", "tooc", "clip-count", "countgd"],
+    "training_free_foundation_model": ["training-free", "prior-free", "dinov2", "dino", "sam2", "foundation model"],
+    "mamba_state_space": ["mamba", "state space", "s4d", "spatial sparse state"],
+    "robustness_test_time_training": ["robust", "corruption", "test-time", "test time", "dual-ttt"],
+    "benchmark_dataset": ["fsc-147", "fsc147", "carpk", "benchmark", "dataset"]
+  },
+  "benchmark_keywords": ["fsc-147", "fsc147", "fsc-147-d", "carpk", "nwpu", "rec-8k"],
+  "code_keywords": ["github.com", "code", "project page", "implementation"],
+  "sota_keywords": ["state-of-the-art", "sota", "outperform", "best", "mae", "rmse", "fps"]
+}
