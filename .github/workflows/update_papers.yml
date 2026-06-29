@@ -1,15 +1,15 @@
-name: Update object-counting papers
+name: Live Object Counting Radar
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 1 * * *'
+    - cron: '0 */6 * * *'  # every 6 hours (LIVE MODE)
 
 permissions:
   contents: write
 
 jobs:
-  update-papers:
+  update-radar:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,18 +19,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Fetch papers
+      - name: Fetch latest papers
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/fetch_papers.py
 
-      - name: Build dashboard
+      - name: Build LIVE radar dashboard
         run: python scripts/build_dashboard.py
 
-      - name: Commit updates
+      - name: Commit live updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md data docs
-          git commit -m "update radar dashboard" || echo "no changes"
+          git add docs data README.md
+          git commit -m "live radar update" || echo "no changes"
           git push
