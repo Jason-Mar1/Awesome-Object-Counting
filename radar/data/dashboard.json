@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-30T00:00:00Z",
+  "live_status": {
+    "mode": "seed",
+    "refresh_cadence": "every 6 hours via GitHub Actions",
+    "paper_count": 6
+  },
+  "stats": {
+    "total": 6,
+    "categories": 3
+  },
+  "rankings": {
+    "top_score": [
+      {
+        "title": "MambaCount: State Space Models for Object Counting",
+        "year": 2025,
+        "score": 92,
+        "category": "state-space",
+        "url": "#",
+        "why_live": "high frontier signal, Mamba-based architecture"
+      },
+      {
+        "title": "RT-Counter: Real-Time Object Counting Framework",
+        "year": 2025,
+        "score": 89,
+        "category": "real-time",
+        "url": "#",
+        "why_live": "strong speed-accuracy tradeoff"
+      },
+      {
+        "title": "OVID: Open-Vocabulary Instance Density Estimation",
+        "year": 2024,
+        "score": 85,
+        "category": "open-vocab",
+        "url": "#",
+        "why_live": "open-vocabulary generalization"
+      }
+    ]
+  },
+  "daily_digest": [
+    {
+      "title": "Mamba-style architectures dominate new counting models",
+      "reason": "state space models emerging as new backbone"
+    },
+    {
+      "title": "Real-time counting becomes practical",
+      "reason": "RT-Counter shows strong FPS/accuracy balance"
+    }
+  ],
+  "hot_topics": [
+    {"topic": "Mamba", "count": 5},
+    {"topic": "Open-Vocabulary", "count": 4},
+    {"topic": "Real-Time", "count": 3}
+  ],
+  "timeline": {
+    "timeline": [
+      {"year": 2021, "type": "Few-shot Counting", "methods": ["FamNet", "CounTR"]},
+      {"year": 2023, "type": "Vision-Language", "methods": ["CLIPCount"]},
+      {"year": 2024, "type": "Open-Vocabulary", "methods": ["OVID"]},
+      {"year": 2025, "type": "State Space Models", "methods": ["MambaCount", "RT-Counter"]}
+    ]
+  },
+  "sota": {
+    "benchmarks": {
+      "FSC-147": {
+        "metric": "MAE",
+        "leaderboard": [
+          {"method": "MambaCount", "mae": 12.3},
+          {"method": "RT-Counter", "mae": 13.1}
+        ]
+      }
+    }
+  }
+}
