@@ -1,0 +1,26 @@
+{
+  "version": "v4",
+  "benchmarks": {
+    "FSC-147": {
+      "metric": "MAE",
+      "leaderboard": [
+        {
+          "method": "MambaCount",
+          "mae": 12.23,
+          "note": "reported in paper"
+        },
+        {
+          "method": "RT-Counter",
+          "mae": 13.30,
+          "fps": 112.48,
+          "note": "real-time tradeoff"
+        }
+      ]
+    },
+    "CARPK": {
+      "metric": "MAE",
+      "leaderboard": []
+    }
+  },
+  "notes": "v4 seed expanded for auto SOTA extraction"
+}
