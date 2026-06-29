@@ -1,0 +1,9 @@
+.wrap{max-width:900px;margin:0 auto;font-family:Arial}
+.eyebrow{color:#888}
+.grid{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:#111;color:#fff;padding:10px;border-radius:8px}
+.panel{margin-top:20px;padding:10px;border:1px solid #ddd;border-radius:10px}
+.paper{padding:10px;border-bottom:1px solid #eee}
+.paper h3{margin:0}
+.tag{display:inline-block;margin:2px;padding:2px 6px;background:#eee;border-radius:6px}
+.empty{color:#999;padding:10px}
