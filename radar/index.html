@@ -4,16 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Object Counting Research Radar</title>
+  <meta name="description" content="Live research radar for object counting papers, SOTA tracking, and method trends.">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="wrap">
-    <p class="eyebrow">Live Object Counting Radar</p>
-    <h1>Object Counting Research Radar</h1>
-    <p class="subtitle">Live paper radar for few-shot, zero-shot, text-guided open-vocabulary, training-free and SOTA object counting research.</p>
-    <section id="status" class="grid"></section>
-    <section class="panel"><h2>Live Feed</h2><div id="feed"></div></section>
-    <section class="panel"><h2>Daily Digest</h2><div id="digest"></div></section>
+    <nav class="topbar">
+      <div class="brand"><span class="logo">OC</span><span>Object Counting Radar</span></div>
+      <a class="github-link" href="https://github.com/Jason-Mar1/Awesome-Object-Counting" target="_blank" rel="noreferrer">GitHub Repo</a>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Live Object Counting Radar · v5</p>
+        <h1>Track object-counting papers before they become SOTA.</h1>
+        <p class="subtitle">A lightweight research-intelligence dashboard for few-shot, zero-shot, open-vocabulary, training-free, Mamba/DINO/SAM-style and real-time object counting work.</p>
+        <div class="hero-actions">
+          <a href="#feed" class="button primary">View Live Feed</a>
+          <a href="#digest" class="button secondary">Read Daily Digest</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <span class="pulse"></span>
+        <h2>Radar Status</h2>
+        <p id="lastUpdated">Loading latest dashboard...</p>
+      </aside>
+    </section>
+
+    <section id="status" class="grid stats-grid"></section>
+
+    <section class="dashboard-grid">
+      <section class="panel main-panel">
+        <div class="panel-head"><h2>Live Feed</h2><span>ranked by recency + frontier signal + SOTA clues</span></div>
+        <div id="feed" class="feed-list"></div>
+      </section>
+
+      <aside class="side-stack">
+        <section class="panel">
+          <div class="panel-head"><h2>Daily Digest</h2><span>what to read first</span></div>
+          <div id="digest"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>Hot Topics</h2><span>current clusters</span></div>
+          <div id="hotTopics" class="tag-cloud"></div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="dashboard-grid lower-grid">
+      <section class="panel">
+        <div class="panel-head"><h2>SOTA Tracking</h2><span>benchmark watchlist</span></div>
+        <div id="sotaPanelBody"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>Method Timeline</h2><span>evolution map</span></div>
+        <div id="timelinePanelBody"></div>
+      </section>
+    </section>
+
+    <footer class="footer">Built from the Awesome Object Counting repository. Data refreshes through GitHub Actions.</footer>
   </main>
   <script src="./app.js"></script>
 </body>
