@@ -1,78 +1,76 @@
 import json
 from pathlib import Path
 from collections import Counter
-import statistics
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data' / 'papers.json'
-BENCH = ROOT / 'data' / 'benchmarks.json'
+SOTA = ROOT / 'data' / 'sota_seed.json'
+RULES = ROOT / 'data' / 'intelligence_rules.json'
 OUT = ROOT / 'docs' / 'radar' / 'data'
 OUT.mkdir(parents=True, exist_ok=True)
 
 
-def load_json(p):
+def load(p):
     return json.loads(p.read_text()) if p.exists() else {}
 
 
-def safe(papers):
-    return papers if isinstance(papers, list) else []
+def score(p, rules):
+    text = (p.get('title','') + ' ' + p.get('abstract','')).lower()
+    s = 0
+
+    if p.get('year',0) >= 2025:
+        s += rules['weights']['recency']
+
+    if p.get('cited_by_count',0) > 0:
+        s += rules['weights']['citation']
+
+    if any(k in text for k in rules['benchmark_keywords']):
+        s += rules['weights']['benchmark_presence']
+
+    for _, kws in rules['frontier_topics'].items():
+        if any(k in text for k in kws):
+            s += rules['weights']['frontier_topic']
+            break
+
+    return s
 
 
-data = load_json(DATA)
-bench = load_json(BENCH)
+def main():
+    data = load(DATA)
+    rules = load(RULES)
+    sota = load(SOTA)
 
-papers = safe(data.get('papers', []))
+    papers = data.get('papers', [])
 
-# normalize
-for i, p in enumerate(papers):
-    p['score'] = p.get('score', 0) or 0
-    p['cited_by_count'] = p.get('cited_by_count', 0) or 0
-    p['year'] = p.get('year', 0) or 0
-    p['id'] = i
+    for i,p in enumerate(papers):
+        p['id'] = i
+        p['score'] = score(p, rules)
 
+    papers_sorted = sorted(papers, key=lambda x: x['score'], reverse=True)
 
-def build_rankings():
-    return {
-        'top_score': sorted(papers, key=lambda x: x['score'], reverse=True)[:10],
-        'top_cited': sorted(papers, key=lambda x: x['cited_by_count'], reverse=True)[:10],
-        'top_recent': sorted(papers, key=lambda x: x['year'], reverse=True)[:10],
+    years = Counter(p.get('year',0) for p in papers)
+    cats = Counter(p.get('category','unknown') for p in papers)
+
+    dashboard = {
+        'generated_at': data.get('generated_at_utc',''),
+        'stats': {
+            'total': len(papers),
+            'categories': len(cats)
+        },
+        'rankings': {
+            'top_score': papers_sorted[:10],
+            'top_recent': sorted(papers, key=lambda x: x.get('year',0), reverse=True)[:10],
+            'top_cited': sorted(papers, key=lambda x: x.get('cited_by_count',0), reverse=True)[:10]
+        },
+        'trends': {
+            'years': [{'x':k,'y':v} for k,v in years.items()],
+            'categories': [{'x':k,'y':v} for k,v in cats.items()]
+        },
+        'graph': {'nodes': [], 'links': []},
+        'sota': sota
     }
 
+    (OUT / 'dashboard.json').write_text(json.dumps(dashboard, ensure_ascii=False, indent=2))
 
-def build_trends():
-    years = Counter(p.get('year', 0) for p in papers)
-    cats = Counter(p.get('category', 'unknown') for p in papers)
-    return {
-        'years': [{'x': k, 'y': v} for k, v in sorted(years.items())],
-        'categories': [{'name': k, 'value': v} for k, v in cats.most_common(10)]
-    }
-
-
-def build_graph():
-    top = sorted(papers, key=lambda x: x['score'], reverse=True)[:20]
-    nodes = []
-    links = []
-    for p in top:
-        pid = f"p{p['id']}"
-        nodes.append({'id': pid, 'label': p.get('title','')[:40], 'type': 'paper'})
-        for t in (p.get('tags') or []):
-            tid = f"t_{t}"
-            nodes.append({'id': tid, 'label': t, 'type': 'tag'})
-            links.append({'source': pid, 'target': tid})
-    return {'nodes': nodes, 'links': links}
-
-
-dashboard = {
-    'generated_at': data.get('generated_at_utc', ''),
-    'stats': {
-        'total': len(papers),
-        'categories': len(set(p.get('category') for p in papers))
-    },
-    'rankings': build_rankings(),
-    'trends': build_trends(),
-    'graph': build_graph(),
-    'benchmarks': bench
-}
-
-(OUT / 'dashboard.json').write_text(json.dumps(dashboard, indent=2, ensure_ascii=False))
-print('v2 dashboard built')
+if __name__ == '__main__':
+    main()
