@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>(function(){try{var m=localStorage.getItem('oc-theme-mode')||'auto';var t;if(m==='manual'){t=localStorage.getItem('oc-theme')||'dark';}else{var h=new Date().getHours();t=(h>=6&&h<18)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Object Counting Research Radar</title>
+  <meta name="description" content="Live research radar for object counting papers, SOTA tracking, and method trends." />
+  <meta property="og:title" content="Object Counting Research Radar" />
+  <meta property="og:description" content="Track object-counting papers before they become SOTA. Live feed, SOTA tracking, hot topics and method timeline." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="radar/styles.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <nav class="topnav">
+    <div class="wrap">
+      <div class="brand"><i class="bi bi-broadcast-pin"></i> OC Radar</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+      <div class="navlinks" id="navlinks">
+        <a href="#feed"><i class="bi bi-broadcast"></i> Live Feed</a>
+        <a href="#trends"><i class="bi bi-graph-up-arrow"></i> Trends</a>
+        <a href="#topics"><i class="bi bi-fire"></i> Hot Topics</a>
+        <a href="#sota"><i class="bi bi-trophy"></i> SOTA</a>
+        <a href="#timeline"><i class="bi bi-clock-history"></i> Timeline</a>
+        <a class="gh" href="https://github.com/Jason-Mar1/Awesome-Object-Counting" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme"><i class="bi bi-moon-stars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="wrap">
+      <div>
+        <h1>Object Counting Research Radar</h1>
+        <p class="sub">Track object-counting papers before they become SOTA.</p>
+        <p class="desc">A live research-intelligence dashboard for few-shot, zero-shot, open-vocabulary, training-free, real-time, and Mamba/DINO/SAM-style object counting papers.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#feed"><i class="bi bi-broadcast"></i> View Live Feed</a>
+          <a class="btn btn-ghost" href="#sota"><i class="bi bi-trophy"></i> Explore SOTA</a>
+          <a class="btn btn-ghost" href="https://github.com/Jason-Mar1/Awesome-Object-Counting" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub Repo</a>
+        </div>
+      </div>
+      <aside class="radar-card">
+        <div class="radar-ring"></div>
+        <h3><i class="bi bi-reception-4"></i> Radar Status</h3>
+        <div class="row"><span class="k">Mode</span><span class="v" id="st-mode">—</span></div>
+        <div class="row"><span class="k">Refresh</span><span class="v" id="st-refresh">—</span></div>
+        <div class="row"><span class="k">Last Updated</span><span class="v" id="st-updated">—</span></div>
+        <div class="row"><span class="k">Papers Tracked</span><span class="v" id="st-count">—</span></div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Stats overview -->
+    <section class="module" id="overview">
+      <div class="section-head"><h2><i class="bi bi-speedometer2"></i> Radar Overview</h2><p class="sub">Snapshot of the current tracking state</p></div>
+      <div class="stats-grid" id="stats-grid"></div>
+    </section>
+
+    <!-- Research trends -->
+    <section class="module" id="trends">
+      <div class="section-head"><h2><i class="bi bi-graph-up-arrow"></i> Research Trends</h2><p class="sub">Where the field is heading, from top-venue papers</p></div>
+      <p class="trends-summary" id="trends-summary"></p>
+      <div class="trends-grid" id="trends-list"><div class="empty">Loading…</div></div>
+    </section>
+
+    <!-- Two-column: feed + side -->
+    <div class="layout">
+      <div>
+        <section class="module" id="feed">
+          <div class="section-head">
+            <h2><i class="bi bi-broadcast"></i> Live Feed</h2>
+            <p class="sub" id="feed-meta">Ranked by recency, frontier signal, benchmark signal and SOTA clues.</p>
+          </div>
+          <div class="toolbar">
+            <input id="feed-search" type="search" placeholder="Search papers, methods, datasets, topics…" />
+            <select id="feed-sort" aria-label="Sort papers">
+              <option value="score">Score</option>
+              <option value="newest">Newest</option>
+              <option value="sota">SOTA Signal</option>
+              <option value="recency">Recency</option>
+            </select>
+          </div>
+          <div class="feed-list" id="feed-list" aria-live="polite">
+            <div class="empty">Loading live feed…</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="side">
+        <section id="digest">
+          <div class="card">
+            <h3><i class="bi bi-journal-text"></i> Daily Digest</h3>
+            <div id="digest-list"><div class="empty">Loading…</div></div>
+          </div>
+        </section>
+        <section id="topics">
+          <div class="card">
+            <h3><i class="bi bi-fire"></i> Hot Topics</h3>
+            <div class="topics" id="topics-list"><div class="empty">Loading…</div></div>
+          </div>
+        </section>
+        <section id="venues">
+          <div class="card">
+            <h3><i class="bi bi-mortarboard"></i> Venues</h3>
+            <div class="topics" id="venues-list"><div class="empty">Loading…</div></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- SOTA -->
+    <section class="module" id="sota">
+      <div class="section-head"><h2><i class="bi bi-trophy"></i> SOTA Tracking</h2><p class="sub">Leading methods per benchmark</p></div>
+      <div class="sota-grid" id="sota-grid"><div class="empty">Loading…</div></div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="module" id="timeline">
+      <div class="section-head"><h2><i class="bi bi-clock-history"></i> Method Timeline</h2><p class="sub">How object-counting methods evolved</p></div>
+      <div class="timeline" id="timeline-list"><div class="empty">Loading…</div></div>
+    </section>
+
+    <!-- Datasets -->
+    <section class="module" id="datasets">
+      <div class="section-head"><h2><i class="bi bi-database"></i> Dataset &amp; Benchmark Map</h2><p class="sub">Common datasets and how often they appear</p></div>
+      <div class="ds-grid" id="datasets-grid"><div class="empty">Loading…</div></div>
+    </section>
+
+    <!-- Category distribution -->
+    <section class="module" id="distribution">
+      <div class="section-head"><h2><i class="bi bi-bar-chart-line"></i> Category Distribution</h2><p class="sub">Method routes across tracked papers</p></div>
+      <div class="dist" id="dist-list"><div class="empty">Loading…</div></div>
+    </section>
+
+    <!-- Research graph -->
+    <section class="module" id="graph">
+      <div class="section-head"><h2><i class="bi bi-diagram-3"></i> Research Graph</h2><p class="sub">Paper → method → dataset → topic relations</p></div>
+      <div class="graph-list" id="graph-list"><div class="empty">Loading…</div></div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>Object Counting Research Radar · data from arXiv &amp; curated sources</span>
+      <span><a href="https://github.com/Jason-Mar1/Awesome-Object-Counting" target="_blank" rel="noopener">GitHub Repository</a></span>
+    </div>
+  </footer>
+
+  <script src="radar/data/dashboard.js"></script>
+  <script src="radar/app.js"></script>
+</body>
+</html>

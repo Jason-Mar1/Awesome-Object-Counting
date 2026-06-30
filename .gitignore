@@ -1,0 +1,27 @@
+# ── Keep local only (do NOT upload to GitHub) ───────────────────────
+# The data-generation backend (engine + secrets) runs on your machine.
+backend/
+
+# Local arXiv tooling + artifacts and the arXiv auto-update workflow.
+# (Your local backend is the source of truth and commits the dashboard data.)
+/scripts/
+/data/
+/.github/
+
+# Secrets
+.env
+*.env
+
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── OS ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor / stray files ────────────────────────────────────────────
+.vscode/
+fef05d1d-9b57-45d1-ae4c-3bc217708de3.png
