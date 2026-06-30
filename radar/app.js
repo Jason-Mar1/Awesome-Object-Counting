@@ -52,12 +52,16 @@
     if (idx >= DATA_CANDIDATES.length) {
       return Promise.reject(new Error("not-found"));
     }
-    return fetch(DATA_CANDIDATES[idx], { cache: "no-store" })
-      .then(function (r) {
-        if (!r.ok) throw new Error("bad-status");
-        return r.json();
-      })
-      .catch(function () { return tryFetch(idx + 1); });
+    try {
+      return fetch(DATA_CANDIDATES[idx], { cache: "no-store" })
+        .then(function (r) {
+          if (!r.ok) throw new Error("bad-status");
+          return r.json();
+        })
+        .catch(function () { return tryFetch(idx + 1); });
+    } catch (e) {
+      return tryFetch(idx + 1);
+    }
   }
 
   function loadRadar() {
@@ -420,20 +424,25 @@
   // to the browser's local clock if the lookup fails.
   function fetchIpHour() {
     if (!window.fetch) return Promise.resolve(null);
-    var controller = ("AbortController" in window) ? new AbortController() : null;
-    var opts = controller ? { signal: controller.signal } : {};
-    if (controller) setTimeout(function () { controller.abort(); }, 3500);
-    return fetch("https://worldtimeapi.org/api/ip", opts)
-      .then(function (r) { if (!r.ok) throw new Error("bad"); return r.json(); })
-      .then(function (d) {
-        // d.datetime is local time at the IP, e.g. "2026-06-30T14:05:01+02:00"
-        if (d && typeof d.datetime === "string" && d.datetime.length >= 13) {
-          var h = parseInt(d.datetime.slice(11, 13), 10);
-          if (!isNaN(h)) return h;
-        }
-        return null;
-      })
-      .catch(function () { return null; });
+    try {
+      var controller = ("AbortController" in window) ? new AbortController() : null;
+      var opts = controller ? { signal: controller.signal } : {};
+      if (controller) setTimeout(function () { try { controller.abort(); } catch (e) {} }, 3500);
+      return fetch("https://worldtimeapi.org/api/ip", opts)
+        .then(function (r) { if (!r.ok) throw new Error("bad"); return r.json(); })
+        .then(function (d) {
+          // d.datetime is local time at the IP, e.g. "2026-06-30T14:05:01+02:00"
+          if (d && typeof d.datetime === "string" && d.datetime.length >= 13) {
+            var h = parseInt(d.datetime.slice(11, 13), 10);
+            if (!isNaN(h)) return h;
+          }
+          return null;
+        })
+        .catch(function () { return null; });
+    } catch (e) {
+      // Some embedded browsers throw synchronously instead of rejecting.
+      return Promise.resolve(null);
+    }
   }
 
   function applyManual(theme) {
@@ -486,8 +495,10 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initTheme();
-    initNav();
+    // Theme/nav must never block data rendering, and in some embedded browsers
+    // fetch() can throw synchronously — isolate each step.
+    try { initTheme(); } catch (e) { /* ignore theme errors */ }
+    try { initNav(); } catch (e) { /* ignore nav errors */ }
     loadRadar();
   });
 })();
