@@ -2,11 +2,10 @@
 # The data-generation backend (engine + secrets) runs on your machine.
 backend/
 
-# Local arXiv tooling + artifacts and the arXiv auto-update workflow.
-# (Your local backend is the source of truth and commits the dashboard data.)
-/scripts/
+# Local arXiv tooling + artifacts. The GitHub Action pipeline is committed.
+/scripts/*
+!/scripts/oc_pipeline.py
 /data/
-/.github/
 
 # Secrets
 .env

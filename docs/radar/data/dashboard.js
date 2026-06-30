@@ -1,18 +1,18 @@
 window.__RADAR_DATA__ = {
-  "generated_at": "2026-06-30T05:37:13.901111+00:00",
+  "generated_at": "2026-06-30T06:16:48.072985+00:00",
   "live_status": {
     "mode": "live",
-    "refresh_cadence": "daily via backend job",
-    "paper_count": 83,
-    "generated_at": "2026-06-30T05:37:13.901111+00:00"
+    "refresh_cadence": "daily via GitHub Actions",
+    "paper_count": 69,
+    "generated_at": "2026-06-30T06:16:48.072985+00:00"
   },
   "stats": {
-    "total": 83,
-    "new_this_week": 2,
+    "total": 69,
+    "new_this_week": 1,
     "categories": 8,
     "hot_topics": 12,
-    "sota_signals": 5,
-    "last_updated": "2026-06-30T05:37:13.901111+00:00"
+    "sota_signals": 3,
+    "last_updated": "2026-06-30T06:16:48.072985+00:00"
   },
   "rankings": {
     "top_score": [
@@ -305,38 +305,6 @@ window.__RADAR_DATA__ = {
         ]
       },
       {
-        "title": "Optimising CSRNet with parameter-free attention mechanisms for crowd counting in public transport",
-        "authors": [
-          "Aida Rostamza",
-          "E. Del Re",
-          "Joshua Cherian Varughese",
-          "Cristina Olaverri-Monreal"
-        ],
-        "venue": "arXiv",
-        "venue_full": "ArXiv.org",
-        "year": 2026,
-        "category": "Vehicle Counting",
-        "score": 64,
-        "recency_score": 80,
-        "sota_signal": 79,
-        "url": "https://arxiv.org/abs/2605.18349",
-        "paper_url": "https://arxiv.org/abs/2605.18349",
-        "code_url": "",
-        "why_live": "High relevance: possible SOTA impact, evaluated on ShanghaiTech.",
-        "abstract_summary": "Occupancy estimation and crowd counting are critical tasks in designing smart and efficient public transport vehicles. Given that public transport loading can vary from sparse to crowded, classical models for occupancy estimation must be…",
-        "tags": [
-          "Real-Time",
-          "Density Map",
-          "ShanghaiTech"
-        ],
-        "datasets": [
-          "ShanghaiTech"
-        ],
-        "benchmarks": [
-          "ShanghaiTech"
-        ]
-      },
-      {
         "title": "CountFormer: A Transformer Framework for Learning Visual Repetition and Structure in Class-Agnostic Object Counting",
         "authors": [
           "Md Tanvir Hossain",
@@ -369,36 +337,6 @@ window.__RADAR_DATA__ = {
         ]
       },
       {
-        "title": "Multi-Modal Hyper-Graph Fusion for Low-Light Crowd Counting",
-        "authors": [
-          "Hao-Yuan Ma",
-          "Li Zhang",
-          "Y L Qiu",
-          "Jie Gao",
-          "Yan Zhang",
-          "Bangjun Wang"
-        ],
-        "venue": "arXiv",
-        "venue_full": "ArXiv.org",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 63,
-        "recency_score": 92,
-        "sota_signal": 79,
-        "url": "https://arxiv.org/abs/2606.18566",
-        "paper_url": "https://arxiv.org/abs/2606.18566",
-        "code_url": "",
-        "why_live": "High relevance: possible SOTA impact, very recent.",
-        "abstract_summary": "Crowd counting is a fundamental task in computer vision. However, crowd counting in low-light environments remains largely underexplored, despite its practical importance in the real world. Existing methods mainly focus on well-lit scenes…",
-        "tags": [
-          "Computer science",
-          "Benchmark (surveying)",
-          "Artificial intelligence"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
         "title": "Test-Time Training for Robust Text-Guided Open-Vocabulary Object Counting",
         "authors": [
           "Hao-Yuan Ma",
@@ -421,29 +359,6 @@ window.__RADAR_DATA__ = {
         "tags": [
           "Open-Vocabulary",
           "Diffusion"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "Real-Time Crowd Counting and Density Estimation Using OpenCV and Deep Learning",
-        "authors": [
-          "Sushma R, Ranjitha S Y,  Dr. Manoj Kumar D P, Dr .Suhas K C"
-        ],
-        "venue": "Repository",
-        "venue_full": "Zenodo (CERN European Organization for Nuclear Research)",
-        "year": 2026,
-        "category": "Real-Time Counting",
-        "score": 63,
-        "recency_score": 92,
-        "sota_signal": 57,
-        "url": "https://doi.org/10.5281/zenodo.20490315",
-        "paper_url": "https://doi.org/10.5281/zenodo.20490315",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "Public spaces are frequented by large crowds of people on occasion. To prevent public disasters such as stampedes, confusion, social distancing, pandemic danger, etc., crowd control is essential under these circumstances. In order to…",
-        "tags": [
-          "Real-Time"
         ],
         "datasets": [],
         "benchmarks": []
@@ -525,59 +440,6 @@ window.__RADAR_DATA__ = {
         ]
       },
       {
-        "title": "Thermal-Only Crowd Counting with Deployment-Time Privacy Protection",
-        "authors": [
-          "Yifei Qian",
-          "Zhongliang Guo",
-          "Chun Tong Lei",
-          "Bowen Deng",
-          "Chun Pong Lau",
-          "Xiaopeng Hong",
-          "Michael P. Pound"
-        ],
-        "venue": "arXiv",
-        "venue_full": "ArXiv.org",
-        "year": 2026,
-        "category": "Remote Sensing Counting",
-        "score": 60,
-        "recency_score": 80,
-        "sota_signal": 57,
-        "url": "https://arxiv.org/abs/2605.17042",
-        "paper_url": "https://arxiv.org/abs/2605.17042",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "While RGB-Thermal crowd counting has shown promise, the paradigm faces critical limitations: RGB data raises privacy concerns in public surveillance, and multi-modal misalignment degrades fusion performance. We propose the first…",
-        "tags": [
-          "Diffusion"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "The code of Visual Prompting and Dynamic Mixture of Experts for Zero-Shot Object Counting with Grounding DINO",
-        "authors": [
-          "Haimin Xu"
-        ],
-        "venue": "Repository",
-        "venue_full": "Zenodo (CERN European Organization for Nuclear Research)",
-        "year": 2026,
-        "category": "Zero-Shot Counting",
-        "score": 60,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.5281/zenodo.20018447",
-        "paper_url": "https://doi.org/10.5281/zenodo.20018447",
-        "code_url": "",
-        "why_live": "High relevance: strong frontier signal.",
-        "abstract_summary": "This repository includes the complete source code and pre-trained .ckpt checkpoint files. The README.md file contains comprehensive instructions for environment configuration, along with the commands for training, validation, and testing.…",
-        "tags": [
-          "DINO",
-          "Zero-Shot"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
         "title": "Does it Really Count? Assessing Semantic Grounding in Text-Guided Class-Agnostic Counting",
         "authors": [
           "Giacomo Pacini",
@@ -608,62 +470,25 @@ window.__RADAR_DATA__ = {
         "benchmarks": []
       },
       {
-        "title": "A Study of Loss Weight Balance in Lightweight Self-Distilled Crowd Counting",
+        "title": "The code of Visual Prompting and Dynamic Mixture of Experts for Zero-Shot Object Counting with Grounding DINO",
         "authors": [
-          "Muhammad Raza",
-          "Atta Ur Rahman",
-          "Pandula Pallewatta",
-          "Inayat Ur Rahman",
-          "Sahib Bahadar"
+          "Haimin Xu"
         ],
-        "venue": "Scientific Journal of…",
-        "venue_full": "Scientific Journal of Engineering Research",
+        "venue": "Repository",
+        "venue_full": "Zenodo (CERN European Organization for Nuclear Research)",
         "year": 2026,
-        "category": "Real-Time Counting",
-        "score": 58,
+        "category": "Zero-Shot Counting",
+        "score": 60,
         "recency_score": 80,
         "sota_signal": 35,
-        "url": "https://doi.org/10.64539/sjer.v2i3.2026.493",
-        "paper_url": "https://doi.org/10.64539/sjer.v2i3.2026.493",
+        "url": "https://doi.org/10.5281/zenodo.20018447",
+        "paper_url": "https://doi.org/10.5281/zenodo.20018447",
         "code_url": "",
-        "why_live": "High relevance: evaluated on ShanghaiTech.",
-        "abstract_summary": "Lightweight crowd counting is important for real-time surveillance and resource-constrained deployment, where both computational efficiency and effective supervision are required. Although teacher-free self-distillation can improve…",
+        "why_live": "High relevance: strong frontier signal.",
+        "abstract_summary": "This repository includes the complete source code and pre-trained .ckpt checkpoint files. The README.md file contains comprehensive instructions for environment configuration, along with the commands for training, validation, and testing.…",
         "tags": [
-          "Real-Time",
-          "Density Map",
-          "ShanghaiTech"
-        ],
-        "datasets": [
-          "ShanghaiTech"
-        ],
-        "benchmarks": [
-          "ShanghaiTech"
-        ]
-      },
-      {
-        "title": "HIRNet: Hypergraph-Induced Iterative Reasoning Network for Crowd Counting",
-        "authors": [
-          "Ruihan Wang",
-          "Mengqi Lei",
-          "Siqi Li",
-          "Wei Bao"
-        ],
-        "venue": "arXiv",
-        "venue_full": "arXiv (preprint)",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 57,
-        "recency_score": 92,
-        "sota_signal": 57,
-        "url": "https://doi.org/10.1145/3805622.3810809",
-        "paper_url": "https://doi.org/10.1145/3805622.3810809",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "In recent years, point regression-based crowd counting has demonstrated remarkable advantages for accurate counting in highly congested scenes. However, existing single-pass regression frameworks lack an explicit self-correction mechanism,…",
-        "tags": [
-          "Computer science",
-          "Leverage (statistics)",
-          "Matching (statistics)"
+          "DINO",
+          "Zero-Shot"
         ],
         "datasets": [],
         "benchmarks": []
@@ -692,34 +517,6 @@ window.__RADAR_DATA__ = {
         "tags": [
           "DINO",
           "Training-Free"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "Spatial-frequency enhanced mamba framework for efficient crowd counting",
-        "authors": [
-          "Chuan-Lin Gan",
-          "Rui‐Sheng Jia",
-          "Tong-Tong Gan",
-          "Hong-Mei Sun",
-          "Yuan-Chao Song"
-        ],
-        "venue": "ESWA",
-        "venue_full": "Expert Systems with Applications",
-        "year": 2026,
-        "category": "Real-Time Counting",
-        "score": 57,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1016/j.eswa.2026.133202",
-        "paper_url": "https://doi.org/10.1016/j.eswa.2026.133202",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "",
-        "tags": [
-          "Mamba",
-          "Real-Time"
         ],
         "datasets": [],
         "benchmarks": []
@@ -754,61 +551,36 @@ window.__RADAR_DATA__ = {
         "benchmarks": []
       },
       {
-        "title": "AttPoint++: Attention-Enhanced Point Proposals for Robust Crowd Counting and Localization",
+        "title": "AMS-Counter: Text-Guided Zero-shot Object Counting via Adaptive Multi-view Similarity-map",
         "authors": [
-          "Bingzhen Jiang",
-          "Xi Zhang"
+          "Cheng Qian",
+          "Jian Cao",
+          "Ying Mao",
+          "Kai Liu",
+          "Peng Zhu",
+          "Jun Sang"
         ],
-        "venue": "Advances in transdisc…",
-        "venue_full": "Advances in transdisciplinary engineering",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 56,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.3233/atde260298",
-        "paper_url": "https://doi.org/10.3233/atde260298",
+        "venue": "arXiv",
+        "venue_full": "arXiv (preprint)",
+        "year": 2025,
+        "category": "Zero-Shot Counting",
+        "score": 57,
+        "recency_score": 52,
+        "sota_signal": 57,
+        "url": "https://doi.org/10.1109/icme59968.2025.11209330",
+        "paper_url": "https://doi.org/10.1109/icme59968.2025.11209330",
         "code_url": "",
-        "why_live": "High relevance: very recent, evaluated on ShanghaiTech.",
-        "abstract_summary": "Crowd counting and localization are fundamental for applications such as intelligent surveillance and urban computing, where heavy occlusions and strong perspective variations pose significant challenges to multi-scale representation and…",
+        "why_live": "High relevance: evaluated on FSC-147.",
+        "abstract_summary": "Text-guided object counting aims to count objects specified by textual descriptions in images, but current methods often rely on simple cosine similarity to align visual and textual embeddings, limiting their ability to capture complex…",
         "tags": [
-          "Density Map",
-          "ShanghaiTech"
+          "Zero-Shot",
+          "FSC-147"
         ],
         "datasets": [
-          "ShanghaiTech"
+          "FSC-147"
         ],
         "benchmarks": [
-          "ShanghaiTech"
-        ]
-      },
-      {
-        "title": "TUNING THE GAUSSIAN SCALE FOR DENSITY-MAP–BASED CROWD COUNTING",
-        "authors": [
-          "Priyanka Sharma",
-          "Laxman Singh Khangarot"
-        ],
-        "venue": "Repository",
-        "venue_full": "Zenodo (CERN European Organization for Nuclear Research)",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 56,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.5281/zenodo.20965149",
-        "paper_url": "https://doi.org/10.5281/zenodo.20965149",
-        "code_url": "",
-        "why_live": "High relevance: very recent, evaluated on ShanghaiTech.",
-        "abstract_summary": "Crowd Counting models have seen numerous developments over time, whereas this study is focused on finding the optimal setting that affects every model - density maps (ground truth) which directly affect the model performance. It analyzes…",
-        "tags": [
-          "Density Map",
-          "ShanghaiTech"
-        ],
-        "datasets": [
-          "ShanghaiTech"
-        ],
-        "benchmarks": [
-          "ShanghaiTech"
+          "FSC-147"
         ]
       },
       {
@@ -873,39 +645,10 @@ window.__RADAR_DATA__ = {
         ],
         "datasets": [],
         "benchmarks": [],
-        "image_url": "/api/images/W7166017436_1782793413.png",
         "has_summary": true,
         "summary_preview": "下面我会把这篇题为 **《Detection and Counting of Objects in an Image Using MATLAB》** 的论文当成一篇典型的“基于传统图像处理的目标检测与计数”论文来讲解。 需要先说明一点：你目前提供的是论文标题和摘要，没有提供完整正文、实验表格和具体数据。因此我不能凭空编造论文中不存在的精确实验数值，比如“准确率 98.7%”之类。但我会根据摘要中明确提到的方法： - 图像采集 Image Acquisition - 预处理 Preprocessing - 基于阈值的分割 Threshold-based Segmentation - 形态学操作 Morphological…",
-        "paper_id": "W7166017436"
-      },
-      {
-        "title": "Scale-Customized Feature Learning Network for crowd counting",
-        "authors": [
-          "Meng Liu",
-          "Kaibing Zhang",
-          "Junwei Wang",
-          "Yixuan Liu",
-          "Meng Yalei"
-        ],
-        "venue": "JVCIR",
-        "venue_full": "Journal of Visual Communication and Image Representation",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 54,
-        "recency_score": 100,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1016/j.jvcir.2026.104880",
-        "paper_url": "https://doi.org/10.1016/j.jvcir.2026.104880",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Exploit",
-          "Feature (linguistics)"
-        ],
-        "datasets": [],
-        "benchmarks": []
+        "paper_id": "W7166017436",
+        "image_url": "/api/images/W7166017436_1782793413.png"
       },
       {
         "title": "Intelligent real-time counting of nursery pigs moving through a hallway based on multi-object detection tracking and cross-line counting",
@@ -1092,59 +835,6 @@ window.__RADAR_DATA__ = {
         "image_url": "/api/images/W7165140811_1782795032.png"
       },
       {
-        "title": "EXPLORE VARIOUS APPROACHES FOR CROWD DENSITY ESTIMATION AND COUNTING",
-        "authors": [
-          "K. Ganesh Kumar",
-          "B.N. Prathibha",
-          "A. Suruliandi"
-        ],
-        "venue": "INTERNATIONAL JOURNAL…",
-        "venue_full": "INTERNATIONAL JOURNAL OF COMPUTER ENGINEERING & TECHNOLOGY",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 52,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.34218/ijcet_17_03_004",
-        "paper_url": "https://doi.org/10.34218/ijcet_17_03_004",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Artificial intelligence",
-          "Data mining"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "INC-ViT: A Hybrid CNN–Transformer Framework for Joint Crowd Detection and Counting in Extremely Dense Scenes",
-        "authors": [
-          "Manar M. Eloqby",
-          "Samih M. Mostafa",
-          "Noha MM. Abdelnapi",
-          "Kamal El-Saady"
-        ],
-        "venue": "Advanced Sciences and…",
-        "venue_full": "Advanced Sciences and Technology Journal.",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 52,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.21608/astj.2026.480592.1111",
-        "paper_url": "https://doi.org/10.21608/astj.2026.480592.1111",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "",
-        "tags": [
-          "Transformer"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
         "title": "Detection of Banana and Counting using One-Stage and Transformer-based Object Detection Models",
         "authors": [
           "Sahil Goes",
@@ -1168,34 +858,6 @@ window.__RADAR_DATA__ = {
         "abstract_summary": "",
         "tags": [
           "Transformer"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "A Benchmark for Semi-supervised Multi-modal Crowd Counting",
-        "authors": [
-          "Haoliang Meng",
-          "Xiaopeng Hong",
-          "Yabin Wang",
-          "Wangmeng Zuo"
-        ],
-        "venue": "arXiv",
-        "venue_full": "arXiv (Cornell University)",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 52,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.48550/arxiv.2606.03646",
-        "paper_url": "https://doi.org/10.48550/arxiv.2606.03646",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "This paper constructs the first benchmark on semi-supervised multi-modal crowd counting. To lay the foundation for this unexplored task, we first formulate the semi-supervised multi-modal setting and a standardized protocol that specifies…",
-        "tags": [
-          "Benchmark (surveying)",
-          "Computer science",
-          "Partition (number theory)"
         ],
         "datasets": [],
         "benchmarks": []
@@ -1227,37 +889,6 @@ window.__RADAR_DATA__ = {
         "abstract_summary": ": Recently, photon-counting computed tomography (PC-CT) devices have become clinically available for X-ray diagnosis, and developments of analysis algorithms to generate various quantitative images have focused attention. This study…",
         "tags": [
           "Real-Time"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "Multi-scale feature fusion with cross-view head re-identification module for crowd-counting",
-        "authors": [
-          "Avinash Rohra",
-          "Baoqun Yin",
-          "Aakash Kumar",
-          "Ajeet Kumar Bhatia",
-          "Yizhen Wang",
-          "Yanzhe Wang",
-          "Izis Kanjarawy"
-        ],
-        "venue": "Pattern Analysis and…",
-        "venue_full": "Pattern Analysis and Applications",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 52,
-        "recency_score": 92,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1007/s10044-026-01697-w",
-        "paper_url": "https://doi.org/10.1007/s10044-026-01697-w",
-        "code_url": "",
-        "why_live": "High relevance: very recent.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Artificial intelligence",
-          "Feature (linguistics)"
         ],
         "datasets": [],
         "benchmarks": []
@@ -1303,7 +934,7 @@ window.__RADAR_DATA__ = {
           "Jiayi Wang",
           "Zhenzhong Chen"
         ],
-        "venue": "JVCIR",
+        "venue": "Journal of Visual Com…",
         "venue_full": "Journal of Visual Communication and Image Representation",
         "year": 2026,
         "category": "Zero-Shot Counting",
@@ -1415,7 +1046,7 @@ window.__RADAR_DATA__ = {
           "Junhui Liu",
           "Shengwei Jia"
         ],
-        "venue": "EAAI",
+        "venue": "Engineering Applicati…",
         "venue_full": "Engineering Applications of Artificial Intelligence",
         "year": 2026,
         "category": "Zero-Shot Counting",
@@ -1444,7 +1075,7 @@ window.__RADAR_DATA__ = {
           "Xiaofeng Xia",
           "David Camacho"
         ],
-        "venue": "ESWA",
+        "venue": "Expert Systems with A…",
         "venue_full": "Expert Systems with Applications",
         "year": 2026,
         "category": "Zero-Shot Counting",
@@ -1545,114 +1176,6 @@ window.__RADAR_DATA__ = {
         "benchmarks": []
       },
       {
-        "title": "Global–local illumination-enhanced fusion for visible-thermal crowd counting and localization",
-        "authors": [
-          "Yue Wei",
-          "Li Zhang",
-          "Bangjun Wang",
-          "Chuntao Ding"
-        ],
-        "venue": "EAAI",
-        "venue_full": "Engineering Applications of Artificial Intelligence",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 49,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1016/j.engappai.2026.115161",
-        "paper_url": "https://doi.org/10.1016/j.engappai.2026.115161",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Artificial intelligence",
-          "RGB color model"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "A LiDAR Point Cloud Dataset for Crowd Segmentation and Counting",
-        "authors": [
-          "Chaima Zaghouani",
-          "Abdullah Khanfor",
-          "Hakim Ghazzai",
-          "Ahmad Alsharoa",
-          "Gianluca Setti"
-        ],
-        "venue": "arXiv",
-        "venue_full": "arXiv (preprint)",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 49,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1109/iscas66217.2026.11562918",
-        "paper_url": "https://doi.org/10.1109/iscas66217.2026.11562918",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Artificial intelligence",
-          "Segmentation"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "CV Crowd Counting of Mackerel Schools",
-        "authors": [
-          "Diogo Ravasco"
-        ],
-        "venue": "Repository",
-        "venue_full": "Zenodo (CERN European Organization for Nuclear Research)",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 49,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.5281/zenodo.20341189",
-        "paper_url": "https://doi.org/10.5281/zenodo.20341189",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "",
-        "tags": [],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "Crowd counting with sparse annotation",
-        "authors": [
-          "Shiwei Zhang",
-          "Zhengzheng Wang",
-          "Qing Liu",
-          "Fei Wang",
-          "Wei Ke",
-          "Tong Zhang"
-        ],
-        "venue": "Pattern Recognition",
-        "venue_full": "Pattern Recognition",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 49,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.1016/j.patcog.2026.114000",
-        "paper_url": "https://doi.org/10.1016/j.patcog.2026.114000",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "",
-        "tags": [
-          "Annotation",
-          "Computer science",
-          "Classifier (UML)"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
         "title": "Verbal and Object Counting",
         "authors": [
           "Douglas H. Clements",
@@ -1674,36 +1197,6 @@ window.__RADAR_DATA__ = {
           "Object (grammar)",
           "Computer science",
           "Artificial intelligence"
-        ],
-        "datasets": [],
-        "benchmarks": []
-      },
-      {
-        "title": "Efficiency-Aware Crowd Counting: A Framework for Adaptive Model Selection and Deployment",
-        "authors": [
-          "Preetam Giridhar Nadoni",
-          "Prital Rajkumar Nyamagoud",
-          "Rohini R",
-          "Nivedana J",
-          "Rashmi K.B",
-          "Shobana T.S"
-        ],
-        "venue": "Research Square",
-        "venue_full": "Research Square",
-        "year": 2026,
-        "category": "Crowd Counting",
-        "score": 49,
-        "recency_score": 80,
-        "sota_signal": 35,
-        "url": "https://doi.org/10.21203/rs.3.rs-9400486/v1",
-        "paper_url": "https://doi.org/10.21203/rs.3.rs-9400486/v1",
-        "code_url": "",
-        "why_live": "High relevance: relevant to the object-counting frontier.",
-        "abstract_summary": "",
-        "tags": [
-          "Computer science",
-          "Benchmarking",
-          "Weighting"
         ],
         "datasets": [],
         "benchmarks": []
@@ -1762,6 +1255,31 @@ window.__RADAR_DATA__ = {
         "benchmarks": []
       },
       {
+        "title": "Enhancing Zero-Shot Object Counting via Text-Guided Local Ranking and Number-Evoked Global Attention",
+        "authors": [
+          "Shiwei Zhang",
+          "Qi Zhou",
+          "Wei Ke"
+        ],
+        "venue": "arXiv",
+        "venue_full": "arXiv (preprint)",
+        "year": 2025,
+        "category": "Zero-Shot Counting",
+        "score": 47,
+        "recency_score": 52,
+        "sota_signal": 35,
+        "url": "https://doi.org/10.1109/iccv51701.2025.01960",
+        "paper_url": "https://doi.org/10.1109/iccv51701.2025.01960",
+        "code_url": "",
+        "why_live": "High relevance: relevant to the object-counting frontier.",
+        "abstract_summary": "",
+        "tags": [
+          "Zero-Shot"
+        ],
+        "datasets": [],
+        "benchmarks": []
+      },
+      {
         "title": "Decoupled Feature Matching for Few-shot Counting and Localization",
         "authors": [
           "Chao Zhai",
@@ -1801,7 +1319,7 @@ window.__RADAR_DATA__ = {
           "Shidong Wang",
           "Haofeng Zhang"
         ],
-        "venue": "JVCIR",
+        "venue": "Journal of Visual Com…",
         "venue_full": "Journal of Visual Communication and Image Representation",
         "year": 2026,
         "category": "Few-Shot Counting",
@@ -1841,6 +1359,36 @@ window.__RADAR_DATA__ = {
         "abstract_summary": "General object detection methods struggle to detect large numbers of small, overlapping objects, such as screws and nuts, in industrial inspection. Moreover, creating dense annotations in these applications is difficult and costly,…",
         "tags": [
           "Few-Shot"
+        ],
+        "datasets": [],
+        "benchmarks": []
+      },
+      {
+        "title": "Text-Guided Object Counting via Residual-Gated Shuffle Attention and Frequency Refinement",
+        "authors": [
+          "Cheng Qian",
+          "Ying Mao",
+          "Jiwu Cao",
+          "Ruotian Zhang",
+          "Peng Zhu",
+          "Jun Sang"
+        ],
+        "venue": "Lecture notes in comp…",
+        "venue_full": "Lecture notes in computer science",
+        "year": 2026,
+        "category": "Text-Guided Counting",
+        "score": 46,
+        "recency_score": 68,
+        "sota_signal": 35,
+        "url": "https://doi.org/10.1007/978-981-95-5755-4_24",
+        "paper_url": "https://doi.org/10.1007/978-981-95-5755-4_24",
+        "code_url": "",
+        "why_live": "High relevance: relevant to the object-counting frontier.",
+        "abstract_summary": "",
+        "tags": [
+          "Computer science",
+          "Robustness (evolution)",
+          "Shuffling"
         ],
         "datasets": [],
         "benchmarks": []
@@ -2085,6 +1633,36 @@ window.__RADAR_DATA__ = {
         "benchmarks": []
       },
       {
+        "title": "Frequency-selective countnet: Enhancing text-guided object counting with frequency features",
+        "authors": [
+          "Cheng Qian",
+          "Jiwu Cao",
+          "Ying Mao",
+          "Ruotian Zhang",
+          "Fei Long",
+          "Jun Sang"
+        ],
+        "venue": "Pattern Recognition",
+        "venue_full": "Pattern Recognition Letters",
+        "year": 2025,
+        "category": "Text-Guided Counting",
+        "score": 42,
+        "recency_score": 52,
+        "sota_signal": 35,
+        "url": "https://doi.org/10.1016/j.patrec.2025.12.014",
+        "paper_url": "https://doi.org/10.1016/j.patrec.2025.12.014",
+        "code_url": "",
+        "why_live": "High relevance: relevant to the object-counting frontier.",
+        "abstract_summary": "",
+        "tags": [
+          "Computer science",
+          "Object (grammar)",
+          "Artificial intelligence"
+        ],
+        "datasets": [],
+        "benchmarks": []
+      },
+      {
         "title": "Semantically-guided cross-level feature fusion network for few-shot object counting via dual-stream template discrimination",
         "authors": [
           "Zhongxiang Xie",
@@ -2104,6 +1682,32 @@ window.__RADAR_DATA__ = {
         "abstract_summary": "",
         "tags": [
           "Few-Shot"
+        ],
+        "datasets": [],
+        "benchmarks": []
+      },
+      {
+        "title": "A hybrid attention-enhanced text-guided crowd counting method",
+        "authors": [
+          "Yong Chen",
+          "Ke Dong"
+        ],
+        "venue": "Applied Soft Computing",
+        "venue_full": "Applied Soft Computing",
+        "year": 2025,
+        "category": "Text-Guided Counting",
+        "score": 42,
+        "recency_score": 52,
+        "sota_signal": 35,
+        "url": "https://doi.org/10.1016/j.asoc.2025.114338",
+        "paper_url": "https://doi.org/10.1016/j.asoc.2025.114338",
+        "code_url": "",
+        "why_live": "High relevance: relevant to the object-counting frontier.",
+        "abstract_summary": "",
+        "tags": [
+          "Computer science",
+          "Feature (linguistics)",
+          "Feature extraction"
         ],
         "datasets": [],
         "benchmarks": []
@@ -2415,11 +2019,11 @@ window.__RADAR_DATA__ = {
     ]
   },
   "research_trends": {
-    "summary": "Object counting is shifting from per-class density regression toward general, promptable systems. Top-venue work (CVPR/ICCV/ECCV/NeurIPS/AAAI) increasingly targets class-agnostic, few-/zero-shot and open-vocabulary counting, leans on vision-language and foundation models, and is now pushing hard on efficiency and real-time inference.",
+    "summary": "Object counting is shifting from per-class density regression toward general, promptable systems: class-agnostic, few-/zero-shot and open-vocabulary counting, vision-language and foundation models, and increasingly efficiency / real-time (state-space / Mamba) designs.",
     "items": [
       {
         "title": "Class-agnostic & exemplar-based counting",
-        "detail": "Counting arbitrary objects from a few exemplars (FSC-147) has become a core setting, moving beyond crowd-only density maps.",
+        "detail": "Counting arbitrary objects from a few exemplars (FSC-147) is now a core setting.",
         "tags": [
           "CVPR",
           "ICCV",
@@ -2428,7 +2032,7 @@ window.__RADAR_DATA__ = {
       },
       {
         "title": "Vision-language & open-vocabulary counting",
-        "detail": "Text prompts and CLIP-style features let models count novel categories described in language (CLIP-Count, CounTX, OVID).",
+        "detail": "Text prompts and CLIP-style features count novel categories (CLIP-Count, CounTX, OVID).",
         "tags": [
           "Open-Vocabulary",
           "Text-Guided",
@@ -2437,7 +2041,7 @@ window.__RADAR_DATA__ = {
       },
       {
         "title": "From few-shot to zero-shot & training-free",
-        "detail": "Reducing reliance on exemplars and annotations; reference-less and training-free pipelines are a fast-growing direction.",
+        "detail": "Reducing reliance on exemplars and annotations is a fast-growing direction.",
         "tags": [
           "Few-Shot",
           "Zero-Shot",
@@ -2446,7 +2050,7 @@ window.__RADAR_DATA__ = {
       },
       {
         "title": "Foundation models as backbones",
-        "detail": "SAM/DINO and large pretrained encoders are used for segmentation-driven and detect-and-verify counting (e.g. DAVE).",
+        "detail": "SAM/DINO and large encoders drive detect-and-verify counting (DAVE, CountGD).",
         "tags": [
           "SAM",
           "DINO",
@@ -2455,7 +2059,7 @@ window.__RADAR_DATA__ = {
       },
       {
         "title": "Efficiency & real-time inference",
-        "detail": "State-space models (Mamba) and lightweight designs target high-FPS, edge-friendly counting (RT-Counter, MambaCount).",
+        "detail": "State-space (Mamba) and lightweight designs target high-FPS counting (RT-Counter, MambaCount).",
         "tags": [
           "Mamba",
           "Real-Time",
@@ -2464,11 +2068,11 @@ window.__RADAR_DATA__ = {
       },
       {
         "title": "New domains & robustness",
-        "detail": "Drone/aerial, remote sensing, low-light and extremely dense scenes drive multimodal fusion and robustness research.",
+        "detail": "Drone/aerial, remote sensing and dense scenes drive multimodal, robust counting.",
         "tags": [
           "DroneCrowd",
           "Remote Sensing",
-          "Low-Light"
+          "Robustness"
         ]
       }
     ]
@@ -2487,13 +2091,13 @@ window.__RADAR_DATA__ = {
     },
     {
       "title": "New papers claim benchmark improvements",
-      "reason": "5 tracked papers carry SOTA-style language.",
+      "reason": "3 tracked papers carry SOTA-style language.",
       "topic": "SOTA",
       "importance": "medium",
       "related_papers": [
         "CountingDINO A Training-free Pipeline for Class-Agnostic Counting using Unsupervised Backbones",
-        "Optimising CSRNet with parameter-free attention mechanisms for crowd counting in public transport",
-        "Multi-Modal Hyper-Graph Fusion for Low-Light Crowd Counting"
+        "PBECount: Prompt-Before-Extract Paradigm for Class-Agnostic Counting",
+        "Class-Agnostic Repetitive Action Counting Using Wearable Devices"
       ]
     },
     {
@@ -2513,12 +2117,12 @@ window.__RADAR_DATA__ = {
       "trend": "up"
     },
     {
-      "topic": "Real-Time",
-      "count": 16,
+      "topic": "Zero-Shot",
+      "count": 14,
       "trend": "up"
     },
     {
-      "topic": "Zero-Shot",
+      "topic": "Real-Time",
       "count": 12,
       "trend": "up"
     },
@@ -2529,12 +2133,7 @@ window.__RADAR_DATA__ = {
     },
     {
       "topic": "Transformer",
-      "count": 8,
-      "trend": "up"
-    },
-    {
-      "topic": "Density Map",
-      "count": 8,
+      "count": 7,
       "trend": "up"
     },
     {
@@ -2543,12 +2142,12 @@ window.__RADAR_DATA__ = {
       "trend": "up"
     },
     {
-      "topic": "Mamba",
+      "topic": "Training-Free",
       "count": 4,
       "trend": "up"
     },
     {
-      "topic": "Training-Free",
+      "topic": "Density Map",
       "count": 4,
       "trend": "up"
     },
@@ -2558,24 +2157,29 @@ window.__RADAR_DATA__ = {
       "trend": "up"
     },
     {
+      "topic": "Mamba",
+      "count": 3,
+      "trend": "up"
+    },
+    {
       "topic": "SAM",
       "count": 2,
       "trend": "up"
     },
     {
       "topic": "Diffusion",
-      "count": 2,
-      "trend": "up"
+      "count": 1,
+      "trend": "flat"
     }
   ],
   "venues": [
     {
       "venue": "arXiv",
-      "count": 30
+      "count": 26
     },
     {
       "venue": "Repository",
-      "count": 11
+      "count": 8
     },
     {
       "venue": "Pattern Recognition",
@@ -2586,23 +2190,15 @@ window.__RADAR_DATA__ = {
       "count": 3
     },
     {
-      "venue": "JVCIR",
-      "count": 3
-    },
-    {
       "venue": "Neurocomputing",
       "count": 3
-    },
-    {
-      "venue": "ESWA",
-      "count": 2
     },
     {
       "venue": "International Journal…",
       "count": 2
     },
     {
-      "venue": "EAAI",
+      "venue": "Journal of Visual Com…",
       "count": 2
     },
     {
@@ -2616,37 +2212,42 @@ window.__RADAR_DATA__ = {
     {
       "venue": "PLoS ONE",
       "count": 1
+    },
+    {
+      "venue": "Computers and Electro…",
+      "count": 1
+    },
+    {
+      "venue": "Smart Agricultural Te…",
+      "count": 1
     }
   ],
   "timeline": {
     "timeline": [
       {
-        "year": 2020,
-        "type": "Density Regression",
+        "year": 2018,
+        "type": "Class-Agnostic Counting (GMN)",
         "methods": [
-          "MCNN",
-          "CSRNet",
-          "DM-Count"
+          "GMN"
         ],
-        "summary": "Density-map regression dominates crowd counting."
+        "summary": "Generic matching network frames counting as matching to exemplars."
       },
       {
         "year": 2021,
-        "type": "Few-Shot Counting",
+        "type": "Few-Shot Counting (FSC-147)",
         "methods": [
-          "FamNet",
-          "BMNet"
+          "FamNet"
         ],
-        "summary": "Class-agnostic counting from a few exemplars emerges (FSC-147)."
+        "summary": "Learning To Count Everything introduces the FSC-147 benchmark."
       },
       {
         "year": 2022,
         "type": "Transformer-based Counting",
         "methods": [
           "CounTR",
-          "MAN"
+          "BMNet+"
         ],
-        "summary": "Transformers improve long-range density reasoning."
+        "summary": "Transformers improve class-agnostic counting."
       },
       {
         "year": 2023,
@@ -2656,14 +2257,15 @@ window.__RADAR_DATA__ = {
           "CounTX",
           "LOCA"
         ],
-        "summary": "Text prompts and CLIP features enable language-driven counting."
+        "summary": "Text prompts enable language-driven counting."
       },
       {
         "year": 2024,
         "type": "Open-Vocabulary Counting",
         "methods": [
           "DAVE",
-          "CACViT"
+          "CACViT",
+          "CountGD"
         ],
         "summary": "Detect-and-verify and open-vocabulary counting push generality."
       },
@@ -2671,7 +2273,8 @@ window.__RADAR_DATA__ = {
         "year": 2025,
         "type": "State Space / Real-Time",
         "methods": [
-          "Mamba-style counting"
+          "MambaCount",
+          "RT-Counter"
         ],
         "summary": "State-space models and efficient designs target real-time counting."
       }
@@ -2730,51 +2333,6 @@ window.__RADAR_DATA__ = {
             "code_url": "#"
           }
         ]
-      },
-      "ShanghaiTech Part A": {
-        "metric": "MAE",
-        "leaderboard": [
-          {
-            "method": "P2PNet",
-            "score": 52.7,
-            "year": 2021,
-            "paper_url": "#",
-            "code_url": "#"
-          },
-          {
-            "method": "MAN",
-            "score": 56.8,
-            "year": 2022,
-            "paper_url": "#",
-            "code_url": "#"
-          },
-          {
-            "method": "DM-Count",
-            "score": 59.7,
-            "year": 2020,
-            "paper_url": "#",
-            "code_url": "#"
-          }
-        ]
-      },
-      "UCF-QNRF": {
-        "metric": "MAE",
-        "leaderboard": [
-          {
-            "method": "MAN",
-            "score": 77.3,
-            "year": 2022,
-            "paper_url": "#",
-            "code_url": "#"
-          },
-          {
-            "method": "DM-Count",
-            "score": 85.6,
-            "year": 2020,
-            "paper_url": "#",
-            "code_url": "#"
-          }
-        ]
       }
     }
   },
@@ -2783,7 +2341,7 @@ window.__RADAR_DATA__ = {
       "name": "FSC-147",
       "task": "few-shot object counting",
       "metric": "MAE/RMSE",
-      "paper_count": 14
+      "paper_count": 15
     },
     {
       "name": "CARPK",
@@ -2792,38 +2350,26 @@ window.__RADAR_DATA__ = {
       "paper_count": 9
     },
     {
-      "name": "ShanghaiTech",
-      "task": "crowd counting",
-      "metric": "MAE/RMSE",
-      "paper_count": 7
-    },
-    {
-      "name": "UCF-QNRF",
-      "task": "crowd counting",
+      "name": "FSCD-LVIS",
+      "task": "few-shot counting + detection",
       "metric": "MAE/RMSE",
       "paper_count": 0
     },
     {
-      "name": "NWPU-Crowd",
-      "task": "crowd counting",
+      "name": "CountBench",
+      "task": "open-vocabulary counting",
       "metric": "MAE/RMSE",
       "paper_count": 0
     },
     {
-      "name": "JHU-Crowd++",
-      "task": "crowd counting",
+      "name": "REC-8K",
+      "task": "referring expression counting",
       "metric": "MAE/RMSE",
       "paper_count": 0
     },
     {
-      "name": "DroneCrowd",
-      "task": "drone crowd counting",
-      "metric": "MAE/RMSE",
-      "paper_count": 0
-    },
-    {
-      "name": "VisDrone",
-      "task": "drone object counting",
+      "name": "PUCPR+",
+      "task": "vehicle counting",
       "metric": "MAE/RMSE",
       "paper_count": 0
     }
@@ -2834,12 +2380,8 @@ window.__RADAR_DATA__ = {
       "count": 32
     },
     {
-      "category": "Crowd Counting",
-      "count": 14
-    },
-    {
       "category": "Zero-Shot Counting",
-      "count": 11
+      "count": 13
     },
     {
       "category": "Open-Vocabulary Counting",
@@ -2847,19 +2389,23 @@ window.__RADAR_DATA__ = {
     },
     {
       "category": "Real-Time Counting",
-      "count": 8
+      "count": 5
     },
     {
       "category": "Object Counting",
       "count": 4
     },
     {
+      "category": "Text-Guided Counting",
+      "count": 3
+    },
+    {
       "category": "Remote Sensing Counting",
-      "count": 2
+      "count": 1
     },
     {
       "category": "Vehicle Counting",
-      "count": 2
+      "count": 1
     }
   ],
   "graph": {

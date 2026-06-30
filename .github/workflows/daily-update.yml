@@ -1,0 +1,45 @@
+name: Daily Research Update
+
+on:
+  schedule:
+    - cron: "0 6 * * *"     # every day at 06:00 UTC
+  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write            # allow github-actions[bot] to commit
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch papers & rebuild dashboard
+        env:
+          # Optional — OpenAlex works without these. Add them as repo secrets
+          # (Settings → Secrets and variables → Actions) to join the polite pool.
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+        run: python scripts/oc_pipeline.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add radar/data docs/radar/data
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: daily research update [skip ci]"
+            git push
+          fi
